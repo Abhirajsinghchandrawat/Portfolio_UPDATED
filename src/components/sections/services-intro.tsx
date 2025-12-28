@@ -28,19 +28,19 @@ const ServicesIntro = () => {
 
           {/* Center: Main Headline */}
           <div className="md:w-1/2 flex flex-col">
-            <motion.h1 
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="section-headline leading-[1.05] tracking-[-0.05em] font-medium text-[clamp(40px,6vw,84px)]"
-            >
-              <span className="block text-white">Future-ready design</span>
-              <span className="block text-white">
-                services, <span className="text-[#999999]">Enhanced</span>
-              </span>
-              <span className="block text-[#999999]">by AI.</span>
-            </motion.h1>
+              <motion.h1 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+                className="section-headline leading-[1.05] tracking-[-0.05em] font-medium text-[clamp(40px,6vw,84px)]"
+              >
+                <span className="block text-white">Advanced Data & Tech</span>
+                <span className="block text-white">
+                  Solutions, <span className="text-[#999999]">Powered</span>
+                </span>
+                <span className="block text-[#999999]">by AI.</span>
+              </motion.h1>
           </div>
 
           {/* Right: Indicator */}
