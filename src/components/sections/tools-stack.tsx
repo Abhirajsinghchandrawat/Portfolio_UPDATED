@@ -102,12 +102,12 @@ const ToolStack = () => {
       icon: 'https://www.svgrepo.com/show/354366/snowflake-icon.svg',
       alt: 'Snowflake Logo',
     },
-    {
-      id: 17,
-      name: 'Alteryx',
-      icon: 'https://www.vectorlogo.zone/logos/alteryx/alteryx-icon.svg',
-      alt: 'Alteryx Logo',
-    },
+      {
+        id: 17,
+        name: 'Alteryx',
+        icon: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Alteryx_logo.svg',
+        alt: 'Alteryx Logo',
+      },
       {
         id: 18,
         name: 'R',
