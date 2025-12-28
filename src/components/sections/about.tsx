@@ -95,20 +95,20 @@ const AboutSection = () => {
                     Selected for McKinsey Accelerate Program and winner of a National-Level Case Competition. I specialize in converting raw data into actionable insights and automating reporting workflows.
                   </p>
 
-                  <div className="pointer-events-auto mt-4">
-                    <a 
-                      href="/resume.pdf" 
-                      download
-                      className="inline-flex items-center gap-3 px-8 py-4 bg-[#FF5C00] text-white rounded-full font-bold text-lg transition-all hover:bg-[#FF7A33] hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,92,0,0.3)] hover:shadow-[0_0_30px_rgba(255,92,0,0.5)]"
-                    >
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                      <polyline points="7 10 12 15 17 10" />
-                      <line x1="12" y1="15" x2="12" y2="3" />
-                    </svg>
-                    Download Resume
-                  </a>
-                </div>
+                    <div className="pointer-events-auto mt-4">
+                      <a 
+                        href="/resume.pdf" 
+                        download
+                        className="inline-flex items-center gap-3 px-10 py-5 bg-[#FF5C00] text-white rounded-full font-bold text-xl transition-all hover:bg-[#FF7A33] hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(255,92,0,0.4)] hover:shadow-[0_0_50px_rgba(255,92,0,0.6)] border border-[#FF7A33]"
+                      >
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                      </svg>
+                      Download Resume
+                    </a>
+                  </div>
               </motion.div>
 
 
