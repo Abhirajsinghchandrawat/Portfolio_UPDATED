@@ -76,7 +76,7 @@ const AboutSection = () => {
             {/* Second Phase: Mission Statement */}
             <motion.div 
               style={{ opacity: secondTextBlockOpacity }}
-              className="absolute inset-0 flex flex-col justify-center px-10 md:px-20 lg:pr-32 lg:pl-0 pointer-events-none"
+              className="absolute inset-0 flex flex-col justify-center px-10 md:px-20 lg:pr-32 lg:pl-0"
             >
               <div className="flex items-center gap-3 mb-8">
                 <span className="text-accent text-lg">
