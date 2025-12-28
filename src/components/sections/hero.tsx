@@ -47,7 +47,7 @@ const HeroSection: React.FC = () => {
         initial={{ opacity: 0, scale: 0.8, y: 20 }}
         animate={{ opacity: 1, scale: 0.9, y: 0 }}
         transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-        className="absolute left-1/2 top-[25%] -translate-x-1/2 -translate-y-1/2 w-full max-w-[500px] aspect-square z-20 pointer-events-none">
+        className="absolute left-1/2 top-[18%] -translate-x-1/2 -translate-y-1/2 w-full max-w-[500px] aspect-square z-20 pointer-events-none">
 
                   <div className="relative w-full h-full opacity-100">
                     <Image
