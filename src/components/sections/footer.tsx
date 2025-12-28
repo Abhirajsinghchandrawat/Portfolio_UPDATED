@@ -96,34 +96,35 @@ const Footer = () => {
       {/* Background Large Branded Graphic Section */}
       <div className="relative w-full flex justify-center mt-[-100px] pointer-events-none select-none">
         {/* The large "Arqos" text background with blur effect as per design instruction */}
-        <div className="relative w-full h-[300px] md:h-[600px] flex justify-center items-end overflow-hidden">
-          {/* Using a text element for Arqos to match the oversized typography aspect */}
-          <h2 className="text-[25vw] leading-[0.8] font-bold text-[#1a1a1a]/30 tracking-tighter transform translate-y-1/4">
-            PORTFOLIO
-          </h2>
-          
-          {/* Blur Overlay - smoky effect mentioned in components_styles */}
-          <div 
-            className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-black via-transparent to-transparent z-10"
-            style={{ 
-              backdropFilter: 'blur(40px)', 
-              maskImage: 'linear-gradient(to top, black, transparent)' 
-            }}
-          />
+          <div className="relative w-full h-[300px] md:h-[600px] flex justify-center items-end overflow-hidden">
+            {/* Using a text element for Portfolio to match the oversized typography aspect */}
+            <h2 className="text-[25vw] leading-[0.8] font-bold text-[#1a1a1a]/30 tracking-tighter transform translate-y-1/4">
+              PORTFOLIO
+            </h2>
+            
+            {/* Blur Overlay - smoky effect mentioned in components_styles */}
+            <div 
+              className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-black via-transparent to-transparent z-10"
+              style={{ 
+                backdropFilter: 'blur(40px)', 
+                maskImage: 'linear-gradient(to top, black, transparent)' 
+              }}
+            />
+          </div>
         </div>
-      </div>
 
-      {/* Logo Asset Fallback / Enhancement */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 w-full flex justify-center opacity-40 mix-blend-screen filter blur-[60px] pointer-events-none">
-         <Image 
-            src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/09f0a84a-4c96-475d-be87-7924d61c1644-arqos-framer-ai/assets/images/C6MefHZjn1GFq3zmR884wfY7c-21.webp"
-            alt="Arqos Footer Graphic"
-            width={1200}
-            height={600}
-            className="object-contain"
-            priority
-         />
-      </div>
+        {/* Logo Asset Fallback / Enhancement */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 w-full flex justify-center opacity-40 mix-blend-screen filter blur-[60px] pointer-events-none">
+           <Image 
+              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/09f0a84a-4c96-475d-be87-7924d61c1644-arqos-framer-ai/assets/images/C6MefHZjn1GFq3zmR884wfY7c-21.webp"
+              alt="Portfolio Footer Graphic"
+              width={1200}
+              height={600}
+              className="object-contain"
+              priority
+           />
+        </div>
+
 
       {/* Floating Action Button (Optional Re-creation of "Made in Framer" style element if needed for pixel-perfect site feel) */}
       <div className="fixed bottom-6 right-6 z-[60] flex flex-col items-end space-y-2">
