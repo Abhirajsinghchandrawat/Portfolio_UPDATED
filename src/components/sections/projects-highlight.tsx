@@ -5,30 +5,31 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const projects = [
-  {
-    title: 'Uber Rides Analysis',
-    category: 'Python (Pandas, Matplotlib)',
-    year: '2024',
-    image: 'https://images.unsplash.com/photo-1511119253456-553b49e8a706?auto=format&fit=crop&q=80&w=800',
-  },
-  {
-    title: 'LIVE HR Dashboard',
-    category: 'Data Visualization (Tableau)',
-    year: '2024',
-    image: 'https://images.unsplash.com/photo-1551288049-bbbda5366a71?auto=format&fit=crop&q=80&w=800',
-  },
-  {
-    title: 'Stock Market Analysis',
-    category: 'Tableau / Predictive Modeling',
-    year: '2024',
-    image: 'https://images.unsplash.com/photo-1611974714158-f88c5f912f20?auto=format&fit=crop&q=80&w=800',
-  },
-  {
-    title: 'Supply & PO Tracking',
-    category: 'SQL & Power BI',
-    year: '2025',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800',
-  },
+    {
+      title: 'Uber Rides Analysis',
+      category: 'Python (Pandas, Matplotlib)',
+      year: '2024',
+      image: 'https://images.unsplash.com/photo-1557333610-90ee4a951ecf?auto=format&fit=crop&q=80&w=1200',
+    },
+    {
+      title: 'LIVE HR Dashboard',
+      category: 'Data Visualization (Tableau)',
+      year: '2024',
+      image: 'https://images.unsplash.com/photo-1551288049-bbbda5366a71?auto=format&fit=crop&q=80&w=1200',
+    },
+    {
+      title: 'Stock Market Analysis',
+      category: 'Tableau / Predictive Modeling',
+      year: '2024',
+      image: 'https://images.unsplash.com/photo-1611974714158-f88c5f912f20?auto=format&fit=crop&q=80&w=1200',
+    },
+    {
+      title: 'Supply & PO Tracking',
+      category: 'SQL & Power BI',
+      year: '2025',
+      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200',
+    },
+
 ];
 
 export default function ProjectsHighlight() {
