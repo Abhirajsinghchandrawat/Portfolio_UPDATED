@@ -10,38 +10,38 @@ const HeroSection: React.FC = () => {
       id="hero"
       className="relative w-full h-screen min-h-[800px] md:h-[1080px] bg-black overflow-hidden flex flex-col justify-end px-6 md:px-16 pb-16 md:pb-24"
     >
-        {/* Moving Text Backdrop */}
-        <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none z-0">
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1.5 }}
-            className="flex whitespace-nowrap"
-          >
-            <motion.div
-              animate={{ x: [0, "-50%"] }}
-              transition={{
-                x: {
-                  repeat: Infinity,
-                  repeatType: "loop",
-                  duration: 25,
-                  ease: "linear",
-                },
-              }}
-              className="flex whitespace-nowrap items-center"
+          {/* Moving Text Backdrop */}
+          <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none z-0">
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.5 }}
+              className="flex whitespace-nowrap"
             >
-              {[...Array(6)].map((_, i) => (
-                <span 
-                  key={i}
-                  className="text-[180px] md:text-[380px] lg:text-[480px] font-black uppercase tracking-[-0.05em] text-transparent leading-none select-none px-24"
-                  style={{ WebkitTextStroke: '3px rgba(255,255,255,0.12)' }}
-                >
-                  PORTFOLIO
-                </span>
-              ))}
+              <motion.div
+                animate={{ x: [0, "-50%"] }}
+                transition={{
+                  x: {
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    duration: 30,
+                    ease: "linear",
+                  },
+                }}
+                className="flex whitespace-nowrap items-center"
+              >
+                {[...Array(6)].map((_, i) => (
+                  <span 
+                    key={i}
+                    className="text-[180px] md:text-[380px] lg:text-[480px] font-black uppercase tracking-[-0.05em] text-transparent leading-none select-none px-24"
+                    style={{ WebkitTextStroke: '1px rgba(255,255,255,0.08)' }}
+                  >
+                    PORTFOLIO
+                  </span>
+                ))}
+              </motion.div>
             </motion.div>
-          </motion.div>
-        </div>
+          </div>
 
         <motion.div 
           initial={{ opacity: 0, scale: 1.1, y: 20 }}
