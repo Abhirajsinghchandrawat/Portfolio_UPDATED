@@ -43,26 +43,22 @@ const HeroSection: React.FC = () => {
               </motion.div>
             </div>
 
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.9, y: 20 }}
-                animate={{ opacity: 1, scale: 0.95, y: 0 }}
-                transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[700px] aspect-square z-20 pointer-events-none"
-              >
-                <div className="relative w-full h-full opacity-90">
-                  <Image
-                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Gemini_Generated_Image_bf98cgbf98cgbf98-1766929311254.png?width=8000&height=8000&resize=contain"
-                    alt="Abhiraj Singh Chandrawat - Data Analyst"
-                    fill
-                    className="object-contain"
-                    style={{
-                      maskImage: 'radial-gradient(circle at center, black 40%, transparent 90%)',
-                      WebkitMaskImage: 'radial-gradient(circle at center, black 40%, transparent 90%)',
-                    }}
-                    priority
-                  />
-                </div>
-              </motion.div>
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                  animate={{ opacity: 1, scale: 0.9, y: 0 }}
+                  transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+                  className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[500px] aspect-square z-20 pointer-events-none"
+                >
+                  <div className="relative w-full h-full opacity-100">
+                    <Image
+                      src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Gemini_Generated_Image_bf98cgbf98cgbf98-1766929311254.png?width=8000&height=8000&resize=contain"
+                      alt="Abhiraj Singh Chandrawat - Data Analyst"
+                      fill
+                      className="object-contain"
+                      priority
+                    />
+                  </div>
+                </motion.div>
 
           <div className="relative z-30 w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-end justify-between gap-8">
           <motion.div 
