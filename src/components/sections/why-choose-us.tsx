@@ -47,8 +47,8 @@ const WhyChooseUs = () => {
             </motion.div>
             <motion.div variants={itemVariants} className="col-span-12 lg:col-span-6">
               <h2 className="text-[40px] md:text-[64px] lg:text-[72px] leading-[0.9] tracking-[-0.05em] text-[#1A1A1A] font-medium">
-                Clarity, Speed, and Intelligence — <br />
-                <span className="text-[#999999]">My Way</span>
+                Turning Data into <br />
+                <span className="text-[#999999]">Strategic Impact</span>
               </h2>
             </motion.div>
 
