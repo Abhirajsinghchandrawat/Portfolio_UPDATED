@@ -148,7 +148,7 @@ const FAQAccordion = () => {
 
 export default function ServiceCards() {
   return (
-    <section className="bg-black text-white w-full border-b border-[#333333]" id="services-detailed">
+    <section className="bg-black text-white w-full border-b border-[#333333]" id="services">
       {/* 
         Numerical markers on the left/right are positioned relative to the container 
         based on the original design screenshots 
