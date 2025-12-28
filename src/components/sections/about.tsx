@@ -28,7 +28,7 @@ const AboutSection = () => {
   return (
     <section
       ref={containerRef}
-      id="about-us"
+      id="studio"
       className="relative bg-black w-full"
       style={{ height: "300vh" }} // Sufficient height for the scroll experience
     >
