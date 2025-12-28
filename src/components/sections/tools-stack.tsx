@@ -96,25 +96,7 @@ const ToolStack = () => {
       icon: 'https://www.svgrepo.com/show/354596/zapier-icon.svg',
       alt: 'Zapier Logo',
     },
-    {
-      id: 16,
-      name: 'Make.com',
-      icon: 'https://www.vectorlogo.zone/logos/make/make-icon.svg',
-      alt: 'Make Logo',
-    },
-    {
-      id: 17,
-      name: 'Alteryx',
-      icon: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Alteryx_logo.svg',
-      alt: 'Alteryx Logo',
-    },
-    {
-      id: 18,
-      name: 'R',
-      icon: 'https://www.svgrepo.com/show/354238/r-lang.svg',
-      alt: 'R Logo',
-    },
-  ];
+    ];
 
 
 
