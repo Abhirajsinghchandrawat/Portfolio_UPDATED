@@ -94,20 +94,20 @@ const FAQAccordion = () => {
 
   const faqs = [
     {
-      q: "What makes Arqos Studio different from traditional design agencies?",
-      a: "We blend human creativity with AI-enhanced workflows to deliver faster, smarter, and scalable design — without compromising quality or vision.",
+      q: "What is your primary area of expertise?",
+      a: "I specialize in Data Analytics, Python programming, and building automated dashboards using SQL, Power BI, and Tableau.",
     },
     {
-      q: "Do you offer custom packages or just fixed pricing?",
-      a: "We provide tailored solutions based on project scope, ensuring you get exactly what your product needs to scale.",
+      q: "Have you worked with real-world business data?",
+      a: "Yes, during my tenure at Powerplay (SaaS), I automated supply and PO tracking dashboards, improving reporting efficiency by 45%.",
     },
     {
-      q: "Can I try your services before committing to a full project?",
-      a: "Yes, we offer specialized sprint models that allow for rapid prototyping and validation of concepts.",
+      q: "What certifications do you hold?",
+      a: "I am an Oracle Certified Analytics Cloud 2025 Professional and a participant in the McKinsey Accelerate Program (2025 Cohort).",
     },
     {
-      q: "Which industries do you work with?",
-      a: "We specialize in Fintech, SaaS, HealthTech, and AI-first startups looking for premium digital identities.",
+      q: "Are you familiar with Agile and Project Management?",
+      a: "Absolutely. I have experience in requirement gathering, creating BRDs, and working within Agile frameworks to deliver data-backed solutions.",
     },
   ];
 
