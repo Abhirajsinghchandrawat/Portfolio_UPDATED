@@ -11,24 +11,24 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
   {
-    question: "What makes Arqos Studio different from traditional design agencies?",
-    answer: "We blend human creativity with AI-enhanced workflows to deliver faster, smarter, and scalable design — without compromising quality or vision.",
+    question: "What specific data analysis services do you provide?",
+    answer: "I specialize in end-to-end data solutions, including exploratory data analysis, predictive modeling, dashboard development (Power BI/Tableau), and business process optimization through quantitative insights.",
   },
   {
-    question: "Do you offer custom packages or just fixed pricing?",
-    answer: "We offer both. While we have standardized packages for common needs, we also build custom roadmaps tailored to unique enterprise requirements and complex product ecosystems.",
+    question: "How do you handle data privacy and security?",
+    answer: "I adhere to strict data governance standards, ensuring all analysis is performed in secure environments with anonymized data where necessary, following industry best practices for data integrity.",
   },
   {
-    question: "Can I try your services before committing to a full project?",
-    answer: "Yes, we often start with a design sprint or a paid discovery phase to ensure alignment and demonstrate our AI-powered capabilities before moving into long-term partnerships.",
+    question: "Can you work with large-scale datasets or real-time data?",
+    answer: "Yes, I have experience working with massive datasets using SQL, Python, and cloud-based data warehouses. I also implement real-time monitoring solutions for dynamic business environments.",
   },
   {
-    question: "Which industries do you work with?",
-    answer: "We specialize in tech-forward industries including SaaS, Web3, AI startups, Fashion Tech, and E-commerce brands looking for a future-noir aesthetic edge.",
+    question: "What industries do you have experience in?",
+    answer: "My expertise spans across Finance, E-commerce, Supply Chain, and HR Analytics, providing tailored insights that drive efficiency and growth in tech-forward sectors.",
   },
   {
-    question: "What industries do you work with?",
-    answer: "Our focus is primarily on digital-native brands and companies looking to integrate AI into their brand experience and product interfaces.",
+    question: "How do we get started on a project together?",
+    answer: "We typically start with a discovery call to understand your data challenges and objectives, followed by a detailed roadmap outlining the analysis phases and expected outcomes.",
   },
 ];
 
