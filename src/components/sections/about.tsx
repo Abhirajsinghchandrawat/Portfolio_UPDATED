@@ -95,11 +95,12 @@ const AboutSection = () => {
                     Selected for McKinsey Accelerate Program and winner of a National-Level Case Competition. I specialize in converting raw data into actionable insights and automating reporting workflows.
                   </p>
 
-                <div className="pointer-events-auto">
-                  <a 
-                    href="#" 
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#FF5C00] text-white rounded-full font-medium transition-all hover:bg-[#E65300] hover:scale-105 active:scale-95 shadow-lg"
-                  >
+                  <div className="pointer-events-auto mt-4">
+                    <a 
+                      href="/resume.pdf" 
+                      download
+                      className="inline-flex items-center gap-3 px-8 py-4 bg-[#FF5C00] text-white rounded-full font-bold text-lg transition-all hover:bg-[#FF7A33] hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,92,0,0.3)] hover:shadow-[0_0_30px_rgba(255,92,0,0.5)]"
+                    >
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                       <polyline points="7 10 12 15 17 10" />
