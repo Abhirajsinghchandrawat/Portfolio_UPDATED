@@ -32,15 +32,21 @@ const ToolStack = () => {
     },
     {
       id: 5,
-      name: 'Excel',
-      icon: 'https://www.svgrepo.com/show/303213/microsoft-excel-2013-logo.svg',
-      alt: 'Excel Logo',
+      name: 'Mixpanel',
+      icon: 'https://www.svgrepo.com/show/354071/mixpanel.svg',
+      alt: 'Mixpanel Logo',
     },
     {
       id: 6,
-      name: 'Alteryx',
-      icon: 'https://static.wikia.nocookie.net/logopedia/images/b/b3/Alteryx_Logo_2017.png',
-      alt: 'Alteryx Logo',
+      name: 'Apache Superset',
+      icon: 'https://logo.svgcdn.com/logos/apache-superset.svg',
+      alt: 'Apache Superset Logo',
+    },
+    {
+      id: 7,
+      name: 'Web Dev',
+      icon: 'https://www.svgrepo.com/show/349419/javascript.svg',
+      alt: 'Web Dev Logo',
     },
   ];
 
