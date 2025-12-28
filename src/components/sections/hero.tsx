@@ -90,25 +90,25 @@ const HeroSection: React.FC = () => {
         </p>
             
                 <div className="flex flex-col items-start md:items-end gap-6">
-                  <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                  >
-                      <a 
-                        href="/resume.pdf" 
-                        download
-                        className="inline-flex items-center gap-4 px-12 py-6 bg-[#FF5C00] text-white rounded-full font-extrabold text-2xl transition-all hover:bg-[#FF7A33] hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(255,92,0,0.5)] hover:shadow-[0_0_60px_rgba(255,92,0,0.7)] border-2 border-[#FF7A33]"
+                      <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
                       >
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                          <polyline points="7 10 12 15 17 10" />
-                          <line x1="12" y1="15" x2="12" y2="3" />
-                        </svg>
-                        Download Resume
-                      </a>
+                          <a 
+                            href="/resume.pdf" 
+                            download
+                            className="inline-flex items-center gap-6 px-16 py-8 bg-[#FF5C00] text-white rounded-full font-black text-3xl transition-all hover:bg-[#FF7A33] hover:scale-110 active:scale-95 shadow-[0_0_50px_rgba(255,92,0,0.6)] hover:shadow-[0_0_80px_rgba(255,92,0,0.8)] border-4 border-[#FF7A33] group"
+                          >
+                          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:-translate-y-1">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                          </svg>
+                          Download Resume
+                        </a>
 
-                  </motion.div>
+                      </motion.div>
 
                 <a href="#about">
                   <motion.div 
