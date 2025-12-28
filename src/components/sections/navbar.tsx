@@ -14,12 +14,12 @@ const Navbar = () => {
     { label: 'Contact', href: '#contact', number: '4.0' },
   ];
 
-      const dropdownItems = [
-        { label: 'Download Resume', icon: <Download size={16} />, href: '/resume.pdf' },
-        { label: 'LinkedIn', icon: <Linkedin size={16} />, href: 'https://www.linkedin.com/in/abhiraj-singh-chandrawat-74975a222/' },
-        { label: 'GitHub', icon: <Github size={16} />, href: 'https://github.com/Abhirajsinghchandrawat' },
-        { label: 'Book a Call', icon: <Phone size={16} />, href: 'mailto:abhirajsingh.chandrawat1@gmail.com' },
-      ];
+        const dropdownItems = [
+          { label: 'Download Resume', icon: <Download size={16} />, href: '/resume.pdf' },
+          { label: 'LinkedIn', icon: <Linkedin size={16} />, href: 'https://www.linkedin.com/in/abhiraj-singh-chandrawat-74975a222/' },
+          { label: 'GitHub', icon: <Github size={16} />, href: 'https://github.com/Abhirajsinghchandrawat' },
+          { label: 'Email Me', icon: <Phone size={16} />, href: 'mailto:abhirajsingh.chandrawat1@gmail.com' },
+        ];
 
   return (
     <motion.nav 
