@@ -30,18 +30,15 @@ const HeroSection: React.FC = () => {
                   }}
                   className="flex whitespace-nowrap items-center"
                 >
-                    {[...Array(6)].map((_, i) => (
-                      <span 
-                        key={i}
-                              className="text-[180px] md:text-[380px] lg:text-[480px] font-black uppercase tracking-[-0.05em] text-transparent leading-none select-none px-24"
-                                style={{ WebkitTextStroke: '4px rgba(255,255,255,0.7)' }}
-
-
-
-                        >
-                        PORTFOLIO
-                      </span>
-                    ))}
+              {[...Array(6)].map((_, i) => (
+                <span 
+                  key={i}
+                  className="text-[180px] md:text-[380px] lg:text-[480px] font-black uppercase tracking-[-0.05em] text-transparent leading-none select-none px-24"
+                  style={{ WebkitTextStroke: '2px rgba(255,255,255,0.15)' }}
+                >
+                  PORTFOLIO
+                </span>
+              ))}
                 </motion.div>
               </motion.div>
             </div>
