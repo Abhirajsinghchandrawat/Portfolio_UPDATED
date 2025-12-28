@@ -111,7 +111,7 @@ const ToolStack = () => {
     {
       id: 18,
       name: 'R',
-      icon: 'https://www.svgrepo.com/show/354252/r-lang.svg',
+      icon: 'https://www.vectorlogo.zone/logos/r-project/r-project-icon.svg',
       alt: 'R Logo',
     },
   ];
