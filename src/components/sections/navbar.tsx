@@ -7,12 +7,13 @@ import { Download, Linkedin, Github, Phone, X } from 'lucide-react';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navLinks = [
-    { label: 'About', href: '#about', number: '1.0' },
-    { label: 'Projects', href: '#projects', number: '2.0' },
-    { label: 'Services', href: '#services', number: '3.0' },
-    { label: 'Contact', href: '#contact', number: '4.0' },
-  ];
+    const navLinks = [
+      { label: 'About', href: '#about', number: '1.0' },
+      { label: 'Stack', href: '#tools', number: '2.0' },
+      { label: 'Experience', href: '#experience', number: '3.0' },
+      { label: 'Projects', href: '#projects', number: '4.0' },
+      { label: 'Contact', href: '#contact', number: '5.0' },
+    ];
 
         const dropdownItems = [
           { label: 'Download Resume', icon: <Download size={16} />, href: '/resume.pdf' },
