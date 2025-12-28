@@ -3,7 +3,6 @@ import HeroSection from "@/components/sections/hero";
 import AboutSection from "@/components/sections/about";
 import ServicesIntro from "@/components/sections/services-intro";
 import WhyChooseUs from "@/components/sections/why-choose-us";
-import ToolStack from "@/components/sections/tools-stack";
 import ExperienceSection from "@/components/sections/experience";
 import ProjectsHighlight from "@/components/sections/projects-highlight";
 import ServiceCards from "@/components/sections/service-cards";
@@ -18,7 +17,6 @@ export default function Home() {
       <AboutSection />
       <ServicesIntro />
       <WhyChooseUs />
-      <ToolStack />
       <ExperienceSection />
       <ProjectsHighlight />
       <ServiceCards />
