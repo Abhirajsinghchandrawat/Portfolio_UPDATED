@@ -3,15 +3,6 @@
 import React from 'react';
 import Image from 'next/image';
 
-/**
- * HeroSection Component
- * 
- * Clones the Arqos® Studio hero section with:
- * - High-contrast profile image of a person with tech eyewear.
- * - Oversized metallic-textured "STUDIO" ticker in the background.
- * - "AI-Driven Studio®" headline.
- * - Scroll indicator and subheadline.
- */
 const HeroSection: React.FC = () => {
   return (
     <section 
@@ -21,7 +12,6 @@ const HeroSection: React.FC = () => {
       {/* 1. Behind everything: The metallic text ticker "STUDIO" */}
       <div className="absolute top-1/2 left-0 w-full -translate-y-1/2 pointer-events-none z-0">
         <div className="flex whitespace-nowrap overflow-hidden">
-          {/* We animate this for a ticker effect as per design instructions */}
           <div className="flex animate-infinite-scroll gap-10 opacity-40">
             {[1, 2, 3, 4, 5].map((i) => (
               <div key={i} className="relative w-[800px] md:w-[1440px] h-[200px] md:h-[400px]">
@@ -34,13 +24,11 @@ const HeroSection: React.FC = () => {
                 />
               </div>
             ))}
-            </div>
           </div>
         </div>
       </div>
 
       {/* 2. Middle Layer: High-contrast profile image */}
-
       <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
         <div className="relative w-full max-w-[904px] h-[760px] translate-y-[-5%]">
           <Image
@@ -66,7 +54,6 @@ const HeroSection: React.FC = () => {
             It’s not just a studio. It’s a design intelligence lab.
           </p>
           
-          {/* Orange Scroll Indicator */}
           <div className="flex items-center justify-center">
             <div className="w-10 h-10 rounded-full bg-[#FF5C00] flex items-center justify-center shadow-lg animate-bounce cursor-pointer">
               <svg 
@@ -85,20 +72,6 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <style jsx global>{`
-        @keyframes infinite-scroll {
-          from { transform: translateX(0); }
-          to { transform: translateX(-50%); }
-        }
-        .animate-infinite-scroll {
-          animation: infinite-scroll 40s linear infinite;
-        }
-        .hero-title {
-          font-size: clamp(60px, 12vw, 180px);
-          font-family: var(--font-display);
-        }
-      `}</style>
     </section>
   );
 };
