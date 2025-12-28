@@ -56,7 +56,7 @@ export default function ProjectsHighlight() {
   };
 
   return (
-    <section className="bg-[#EFEEEA] pt-40 pb-20 px-6 md:px-10 lg:px-20 overflow-hidden">
+    <section id="projects" className="bg-[#EFEEEA] pt-40 pb-20 px-6 md:px-10 lg:px-20 overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
         {/* Section Header */}
         <motion.div 
