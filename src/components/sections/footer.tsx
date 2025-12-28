@@ -21,15 +21,15 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex flex-col">
-              <span className="text-muted-foreground text-sm uppercase tracking-widest font-mono mb-2">Let's Talk</span>
-              <a 
-                href="mailto:hello@arqos.studio" 
-                className="text-white hover:text-accent transition-colors duration-300 text-2xl md:text-4xl lg:text-5xl font-medium tracking-tighter"
-              >
-                hello@arqos.studio
-              </a>
+                <span className="text-muted-foreground text-sm uppercase tracking-widest font-mono mb-2">Let's Talk</span>
+                <a 
+                  href="mailto:abhirajsinghchandrawat@gmail.com" 
+                  className="text-white hover:text-accent transition-colors duration-300 text-2xl md:text-4xl lg:text-5xl font-medium tracking-tighter"
+                >
+                  abhirajsinghchandrawat@gmail.com
+                </a>
+              </div>
             </div>
-          </div>
 
           {/* Right Side: Links Grid */}
           <div className="flex flex-row space-x-12 md:space-x-24 lg:space-x-32">
