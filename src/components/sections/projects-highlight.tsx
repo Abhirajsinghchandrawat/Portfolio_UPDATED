@@ -12,20 +12,20 @@ const projects = [
       image: 'https://images.unsplash.com/photo-1599739291060-4578e77dac5d?auto=format&fit=crop&q=80&w=1200',
       link: 'https://github.com/Abhirajsinghchandrawat/Uber-Rides-Data-Analysis-using-Python'
     },
-    {
-      title: 'LIVE HR Dashboard',
-      category: 'Data Visualization (Tableau)',
-      year: '2024',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200',
-      link: 'https://public.tableau.com/app/profile/a.c8613/viz/LIVEHRDashboardProject/MAINDASHBOARD'
-    },
-    {
-      title: 'Stock Market Analysis',
-      category: 'Tableau / Predictive Modeling',
-      year: '2024',
-      image: 'https://images.unsplash.com/photo-1611974717484-24504100c507?auto=format&fit=crop&q=80&w=1200',
-      link: 'https://public.tableau.com/views/StockMarketProjecct/Dashboard1'
-    },
+      {
+        title: 'LIVE HR Dashboard',
+        category: 'Data Visualization (Tableau)',
+        year: '2024',
+        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200',
+        link: 'https://public.tableau.com/app/profile/a.c8613/viz/LIVEHRDashboardProject/MAINDASHBOARD'
+      },
+      {
+        title: 'Stock Market Analysis',
+        category: 'Tableau / Predictive Modeling',
+        year: '2024',
+        image: 'https://images.unsplash.com/photo-1611974717484-24504100c507?auto=format&fit=crop&q=80&w=1200',
+        link: 'https://public.tableau.com/views/StockMarketProjecct/Dashboard1'
+      },
     {
       title: 'Supply & PO Tracking',
       category: 'SQL & Power BI',
