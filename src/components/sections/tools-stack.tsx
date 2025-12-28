@@ -9,7 +9,7 @@ const ToolStack = () => {
     {
       id: 1,
       name: 'ChatGPT',
-      icon: 'https://www.svgrepo.com/show/306500/openai.svg',
+      icon: 'https://www.vectorlogo.zone/logos/openai/openai-icon.svg',
       alt: 'ChatGPT Logo',
     },
     {
@@ -21,13 +21,13 @@ const ToolStack = () => {
     {
       id: 3,
       name: 'Jira',
-      icon: 'https://www.svgrepo.com/show/353935/jira.svg',
+      icon: 'https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg',
       alt: 'Jira Logo',
     },
     {
       id: 4,
       name: 'Confluence',
-      icon: 'https://www.svgrepo.com/show/353606/confluence.svg',
+      icon: 'https://www.vectorlogo.zone/logos/atlassian_confluence/atlassian_confluence-icon.svg',
       alt: 'Confluence Logo',
     },
     {
