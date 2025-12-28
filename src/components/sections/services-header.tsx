@@ -25,15 +25,15 @@ const ServicesHeader: React.FC = () => {
           </div>
 
             {/* Center: Large Headline */}
-            <div className="md:w-[70%] lg:w-[65%]">
-              <h1 className="text-[42px] leading-[1.1] md:text-[62px] lg:text-[72px] font-medium tracking-[-0.03em] text-white">
-                <span className="block">Advanced Data & Tech</span>
-                <span className="block italic md:not-italic">
-                  Solutions, <span className="text-white">Powered</span>
-                </span>
-                <span className="block">by AI.</span>
-              </h1>
-            </div>
+              <div className="md:w-[70%] lg:w-[65%]">
+                <h1 className="text-[42px] leading-[1.1] md:text-[62px] lg:text-[72px] font-medium tracking-[-0.03em] text-white">
+                  <span className="block">Future-Ready Tech</span>
+                  <span className="block italic md:not-italic">
+                    & Data Solutions, <span className="text-white">Powered</span>
+                  </span>
+                  <span className="block">by AI.</span>
+                </h1>
+              </div>
 
           {/* Right Side: Spacer/Service Count Badge */}
           <div className="hidden md:flex md:w-[15%] justify-end pt-4">
