@@ -34,7 +34,8 @@ const HeroSection: React.FC = () => {
                     <span 
                       key={i}
                         className="text-[180px] md:text-[380px] lg:text-[480px] font-black uppercase tracking-[-0.05em] text-transparent leading-none select-none px-24"
-                        style={{ WebkitTextStroke: '1px rgba(255,255,255,0.1)' }}
+                          style={{ WebkitTextStroke: '1.5px rgba(255,255,255,0.25)' }}
+
                       >
                       PORTFOLIO
                     </span>
