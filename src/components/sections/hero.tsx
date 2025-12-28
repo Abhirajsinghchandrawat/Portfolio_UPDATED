@@ -57,20 +57,20 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="flex flex-col gap-4"
         >
-          <h1 className="hero-title text-white tracking-[-0.05em] uppercase m-0 leading-[0.85]">
-            AI-Driven <br className="hidden md:block" /> Studio®
-          </h1>
-        </motion.div>
+            <h1 className="hero-title text-white tracking-[-0.05em] uppercase m-0 leading-[0.85]">
+              Abhiraj Singh <br className="hidden md:block" /> Chandrawat
+            </h1>
+          </motion.div>
 
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col items-start md:items-end gap-10 md:text-right max-w-[320px]"
-        >
-          <p className="text-[#999999] text-[18px] md:text-[20px] leading-[1.3] font-light">
-            It’s not just a studio. It’s a design intelligence lab.
-          </p>
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            className="flex flex-col items-start md:items-end gap-10 md:text-right max-w-[320px]"
+          >
+            <p className="text-[#999999] text-[18px] md:text-[20px] leading-[1.3] font-light">
+              Consultant & Data Analyst. Navigating ambiguity with data-driven precision.
+            </p>
           
           <div className="flex items-center justify-center">
             <motion.div 
