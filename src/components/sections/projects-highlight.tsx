@@ -6,28 +6,28 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'Redshift®',
-    category: 'Automobile / EV',
-    year: '2025',
-    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/09f0a84a-4c96-475d-be87-7924d61c1644-arqos-framer-ai/assets/images/f2e0PAwp9naaeyTmfmwi2epn0-4.webp',
-  },
-  {
-    title: 'TrendLoop',
-    category: 'E-commerce',
-    year: '2025',
-    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/09f0a84a-4c96-475d-be87-7924d61c1644-arqos-framer-ai/assets/images/j2pBSFuof3BXauwdGqy3HWWEc-5.webp',
-  },
-  {
-    title: 'Lüma Skin',
-    category: 'Skincare / Beauty Tech',
-    year: '2025',
-    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/09f0a84a-4c96-475d-be87-7924d61c1644-arqos-framer-ai/assets/images/LsCC4tPk9tYC0Bdi5ZlHsbcek4-6.webp',
-  },
-  {
-    title: 'Fabrica',
-    category: 'Fashion Tech',
+    title: 'Uber Rides Analysis',
+    category: 'Python (Pandas, Matplotlib)',
     year: '2024',
-    image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/09f0a84a-4c96-475d-be87-7924d61c1644-arqos-framer-ai/assets/images/SNY17MQPOkF9RIR6qu8BRqnzJ0-8.webp',
+    image: 'https://images.unsplash.com/photo-1511119253456-553b49e8a706?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    title: 'LIVE HR Dashboard',
+    category: 'Data Visualization (Tableau)',
+    year: '2024',
+    image: 'https://images.unsplash.com/photo-1551288049-bbbda5366a71?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    title: 'Stock Market Analysis',
+    category: 'Tableau / Predictive Modeling',
+    year: '2024',
+    image: 'https://images.unsplash.com/photo-1611974714158-f88c5f912f20?auto=format&fit=crop&q=80&w=800',
+  },
+  {
+    title: 'Supply & PO Tracking',
+    category: 'SQL & Power BI',
+    year: '2025',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800',
   },
 ];
 
