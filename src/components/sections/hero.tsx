@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
                     <span 
                       key={i}
                           className="text-[180px] md:text-[380px] lg:text-[480px] font-black uppercase tracking-[-0.05em] text-transparent leading-none select-none px-24"
-                            style={{ WebkitTextStroke: '2px rgba(255,255,255,0.35)' }}
+                            style={{ WebkitTextStroke: '2px rgba(255,255,255,0.45)' }}
 
 
                       >
@@ -46,25 +46,23 @@ const HeroSection: React.FC = () => {
           </div>
 
           <motion.div 
-            initial={{ opacity: 0, scale: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-            className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] aspect-square z-10 pointer-events-none"
           >
-            <div className="relative w-full max-w-[900px] h-[800px] md:h-full flex items-center justify-center translate-y-[5%]">
-              <div className="relative w-full h-full mix-blend-screen opacity-90 scale-110">
-                <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Gemini_Generated_Image_bf98cgbf98cgbf98-1766929311254.png?width=8000&height=8000&resize=contain"
-                  alt="Abhiraj Singh Chandrawat - Data Analyst"
-                  fill
-                  className="object-contain"
-                  style={{
-                    maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%), linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%)',
-                    WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%), linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%)',
-                  }}
-                  priority
-                />
-              </div>
+            <div className="relative w-full h-full opacity-80">
+              <Image
+                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Gemini_Generated_Image_bf98cgbf98cgbf98-1766929311254.png?width=8000&height=8000&resize=contain"
+                alt="Abhiraj Singh Chandrawat - Data Analyst"
+                fill
+                className="object-contain"
+                style={{
+                  maskImage: 'radial-gradient(circle at center, black 40%, transparent 90%)',
+                  WebkitMaskImage: 'radial-gradient(circle at center, black 40%, transparent 90%)',
+                }}
+                priority
+              />
             </div>
           </motion.div>
 
