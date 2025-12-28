@@ -10,64 +10,64 @@ const HeroSection: React.FC = () => {
       id="hero"
       className="relative w-full h-screen min-h-[800px] md:h-[1080px] bg-black overflow-hidden flex flex-col justify-end px-6 md:px-16 pb-16 md:pb-24"
     >
-          {/* Moving Text Backdrop */}
-          <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none z-0">
-            <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1.5 }}
-              className="flex whitespace-nowrap"
-            >
-              <motion.div
-                animate={{ x: [0, "-50%"] }}
-                transition={{
-                  x: {
-                    repeat: Infinity,
-                    repeatType: "loop",
-                    duration: 30,
-                    ease: "linear",
-                  },
-                }}
-                className="flex whitespace-nowrap items-center"
+            {/* Moving Text Backdrop */}
+            <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none z-10">
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.5 }}
+                className="flex whitespace-nowrap"
               >
-                  {[...Array(6)].map((_, i) => (
-                    <span 
-                      key={i}
-                            className="text-[180px] md:text-[380px] lg:text-[480px] font-black uppercase tracking-[-0.05em] text-transparent leading-none select-none px-24"
-                              style={{ WebkitTextStroke: '3px rgba(255,255,255,0.6)' }}
-
-
-
-                      >
-                      PORTFOLIO
-                    </span>
-                  ))}
-              </motion.div>
-            </motion.div>
-          </div>
-
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9, y: 20 }}
-              animate={{ opacity: 1, scale: 0.95, y: 0 }}
-              transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[700px] aspect-square z-10 pointer-events-none"
-            >
-              <div className="relative w-full h-full opacity-90">
-                <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Gemini_Generated_Image_bf98cgbf98cgbf98-1766929311254.png?width=8000&height=8000&resize=contain"
-                  alt="Abhiraj Singh Chandrawat - Data Analyst"
-                  fill
-                  className="object-contain"
-                  style={{
-                    maskImage: 'radial-gradient(circle at center, black 35%, transparent 85%)',
-                    WebkitMaskImage: 'radial-gradient(circle at center, black 35%, transparent 85%)',
+                <motion.div
+                  animate={{ x: [0, "-50%"] }}
+                  transition={{
+                    x: {
+                      repeat: Infinity,
+                      repeatType: "loop",
+                      duration: 30,
+                      ease: "linear",
+                    },
                   }}
-                  priority
-                />
-              </div>
-            </motion.div>
+                  className="flex whitespace-nowrap items-center"
+                >
+                    {[...Array(6)].map((_, i) => (
+                      <span 
+                        key={i}
+                              className="text-[180px] md:text-[380px] lg:text-[480px] font-black uppercase tracking-[-0.05em] text-transparent leading-none select-none px-24"
+                                style={{ WebkitTextStroke: '4px rgba(255,255,255,0.7)' }}
 
-        <div className="relative z-20 w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-end justify-between gap-8">
+
+
+                        >
+                        PORTFOLIO
+                      </span>
+                    ))}
+                </motion.div>
+              </motion.div>
+            </div>
+
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                animate={{ opacity: 1, scale: 0.95, y: 0 }}
+                transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[700px] aspect-square z-20 pointer-events-none"
+              >
+                <div className="relative w-full h-full opacity-90">
+                  <Image
+                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Gemini_Generated_Image_bf98cgbf98cgbf98-1766929311254.png?width=8000&height=8000&resize=contain"
+                    alt="Abhiraj Singh Chandrawat - Data Analyst"
+                    fill
+                    className="object-contain"
+                    style={{
+                      maskImage: 'radial-gradient(circle at center, black 40%, transparent 90%)',
+                      WebkitMaskImage: 'radial-gradient(circle at center, black 40%, transparent 90%)',
+                    }}
+                    priority
+                  />
+                </div>
+              </motion.div>
+
+          <div className="relative z-30 w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-end justify-between gap-8">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
