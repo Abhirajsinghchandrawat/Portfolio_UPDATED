@@ -6,6 +6,7 @@ import WhyChooseUs from "@/components/sections/why-choose-us";
 import ExperienceSection from "@/components/sections/experience";
 import ProjectsHighlight from "@/components/sections/projects-highlight";
 import ServiceCards from "@/components/sections/service-cards";
+import ToolsStack from "@/components/sections/tools-stack";
 import ContactForm from "@/components/sections/contact-form";
 import Footer from "@/components/sections/footer";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <ExperienceSection />
       <ProjectsHighlight />
       <ServiceCards />
+      <ToolsStack />
       <ContactForm />
       <Footer />
     </main>
