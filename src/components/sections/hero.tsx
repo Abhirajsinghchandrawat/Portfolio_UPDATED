@@ -12,22 +12,20 @@ const HeroSection: React.FC = () => {
     >
       <motion.div 
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0.4 }}
+        animate={{ opacity: 0.2 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
-        className="absolute top-1/2 left-0 w-full -translate-y-1/2 pointer-events-none z-0"
+        className="absolute top-1/2 left-0 w-full -translate-y-1/2 pointer-events-none z-0 overflow-hidden"
       >
-        <div className="flex whitespace-nowrap overflow-hidden">
-          <div className="flex animate-infinite-scroll gap-10">
-            {[1, 2, 3, 4, 5].map((i) => (
-              <div key={i} className="relative w-[800px] md:w-[1440px] h-[200px] md:h-[400px]">
-                <Image
-                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/09f0a84a-4c96-475d-be87-7924d61c1644-arqos-framer-ai/assets/images/t6x4O3L4nPLO98SgFEaoOlGt4-2.webp"
-                  alt="STUDIO Backdrop"
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
+        <div className="flex whitespace-nowrap">
+          <div className="flex animate-infinite-scroll gap-20 py-10">
+            {[1, 2, 3].map((i) => (
+              <span 
+                key={i} 
+                className="text-[120px] md:text-[280px] font-black uppercase tracking-[-0.05em] text-transparent stroke-text"
+                style={{ WebkitTextStroke: '1px rgba(255,255,255,0.1)' }}
+              >
+                PORTFOLIO
+              </span>
             ))}
           </div>
         </div>
