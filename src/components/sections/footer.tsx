@@ -13,19 +13,19 @@ const Footer = () => {
             <div className="flex flex-col space-y-6">
               <div className="flex items-center space-x-2">
                 <span className="text-accent text-xl">+</span>
-                <a 
-                  href="tel:+919664673445" 
-                  className="text-white hover:text-accent transition-colors duration-300 font-sans text-sm md:text-base tracking-tight"
-                >
+                <a
+                href="tel:+919664673445"
+                className="text-white hover:text-accent transition-colors duration-300 font-sans text-sm md:text-base tracking-tight">
+
                   +91-9664673445
                 </a>
               </div>
               <div className="flex flex-col">
                   <span className="text-muted-foreground text-sm uppercase tracking-widest font-mono mb-2">Let's Talk</span>
-                  <a 
-                    href="mailto:abhirajsingh.chandrawat1@gmail.com" 
-                    className="text-white hover:text-accent transition-colors duration-300 text-2xl md:text-4xl lg:text-5xl font-medium tracking-tighter break-all md:break-normal"
-                  >
+                  <a
+                href="mailto:abhirajsingh.chandrawat1@gmail.com"
+                className="text-white hover:text-accent transition-colors duration-300 text-2xl md:text-4xl lg:text-5xl font-medium tracking-tighter break-all md:break-normal !w-full !h-10">
+
                     abhirajsingh.chandrawat1@gmail.com
                   </a>
                 </div>
@@ -38,22 +38,22 @@ const Footer = () => {
               <h6 className="text-[10px] md:text-[12px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-2">Navigation</h6>
               <ul className="flex flex-col space-y-2">
                 {[
-                  { name: 'Home', href: '#hero' },
-                  { name: 'About', href: '#about' },
-                  { name: 'Projects', href: '#projects' },
-                  { name: 'Services', href: '#services' },
-                  { name: 'Contact', href: '#contact' },
-                ].map((item) => (
-                  <li key={item.name}>
-                    <a 
-                      href={item.href} 
-                      className="group flex items-center text-white/80 hover:text-white transition-colors duration-300 text-sm md:text-base"
-                    >
+                { name: 'Home', href: '#hero' },
+                { name: 'About', href: '#about' },
+                { name: 'Projects', href: '#projects' },
+                { name: 'Services', href: '#services' },
+                { name: 'Contact', href: '#contact' }].
+                map((item) =>
+                <li key={item.name}>
+                    <a
+                    href={item.href}
+                    className="group flex items-center text-white/80 hover:text-white transition-colors duration-300 text-sm md:text-base">
+
                       {item.name}
                       <ArrowUpRight className="ml-1 w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity" />
                     </a>
                   </li>
-                ))}
+                )}
               </ul>
             </div>
 
@@ -62,21 +62,21 @@ const Footer = () => {
               <h6 className="text-[10px] md:text-[12px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-2">Social Media</h6>
                 <ul className="flex flex-col space-y-2">
                   {[
-                    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/abhiraj-singh-chandrawat-74975a222/' },
-                    { name: 'GitHub', href: 'https://github.com/Abhirajsinghchandrawat' },
-                  ].map((item) => (
-                    <li key={item.name}>
-                      <a 
-                        href={item.href} 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group flex items-center text-white/80 hover:text-white transition-colors duration-300 text-sm md:text-base"
-                      >
+                { name: 'LinkedIn', href: 'https://www.linkedin.com/in/abhiraj-singh-chandrawat-74975a222/' },
+                { name: 'GitHub', href: 'https://github.com/Abhirajsinghchandrawat' }].
+                map((item) =>
+                <li key={item.name}>
+                      <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center text-white/80 hover:text-white transition-colors duration-300 text-sm md:text-base">
+
                         {item.name}
                         <ArrowUpRight className="ml-1 w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity" />
                       </a>
                     </li>
-                  ))}
+                )}
                 </ul>
             </div>
           </div>
@@ -102,26 +102,26 @@ const Footer = () => {
             </h2>
             
             {/* Blur Overlay - smoky effect mentioned in components_styles */}
-            <div 
-              className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-black via-transparent to-transparent z-10"
-              style={{ 
-                backdropFilter: 'blur(40px)', 
-                maskImage: 'linear-gradient(to top, black, transparent)' 
-              }}
-            />
+            <div
+            className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-black via-transparent to-transparent z-10"
+            style={{
+              backdropFilter: 'blur(40px)',
+              maskImage: 'linear-gradient(to top, black, transparent)'
+            }} />
+
           </div>
         </div>
 
         {/* Logo Asset Fallback / Enhancement */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 w-full flex justify-center opacity-40 mix-blend-screen filter blur-[60px] pointer-events-none">
-           <Image 
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/09f0a84a-4c96-475d-be87-7924d61c1644-arqos-framer-ai/assets/images/C6MefHZjn1GFq3zmR884wfY7c-21.webp"
-              alt="Portfolio Footer Graphic"
-              width={1200}
-              height={600}
-              className="object-contain"
-              priority
-           />
+           <Image
+          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/09f0a84a-4c96-475d-be87-7924d61c1644-arqos-framer-ai/assets/images/C6MefHZjn1GFq3zmR884wfY7c-21.webp"
+          alt="Portfolio Footer Graphic"
+          width={1200}
+          height={600}
+          className="object-contain"
+          priority />
+
         </div>
 
 
@@ -129,8 +129,8 @@ const Footer = () => {
       <div className="fixed bottom-6 right-6 z-[60] flex flex-col items-end space-y-2">
          {/* Utility buttons as seen in screenshot */}
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;
