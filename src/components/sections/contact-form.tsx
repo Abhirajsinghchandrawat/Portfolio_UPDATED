@@ -16,12 +16,12 @@ const ContactSection = () => {
           {/* Left Column: Typography & Discovery Link */}
           <div className="flex flex-col justify-between">
             <div className="max-w-[560px]">
-              <h2 className="section-headline mb-6">
-                Let&apos;s Talk.
-                <span className="text-[#999999] block font-normal mt-2 leading-[1.2]">
-                  we&apos;re here to design, build & scale with you.
-                </span>
-              </h2>
+                <h2 className="section-headline mb-6">
+                  Let&apos;s Talk.
+                  <span className="text-[#999999] block font-normal mt-2 leading-[1.2]">
+                    I&apos;m here to analyze, visualize & solve with you.
+                  </span>
+                </h2>
               
               <a 
                 href="#contact" 
