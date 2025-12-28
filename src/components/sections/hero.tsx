@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
                 x: {
                   repeat: Infinity,
                   repeatType: "loop",
-                  duration: 20,
+                  duration: 25,
                   ease: "linear",
                 },
               }}
@@ -33,8 +33,8 @@ const HeroSection: React.FC = () => {
               {[...Array(6)].map((_, i) => (
                 <span 
                   key={i}
-                  className="text-[150px] md:text-[350px] lg:text-[450px] font-black uppercase tracking-[-0.05em] text-transparent leading-none select-none px-20"
-                  style={{ WebkitTextStroke: '2px rgba(255,255,255,0.08)' }}
+                  className="text-[180px] md:text-[380px] lg:text-[480px] font-black uppercase tracking-[-0.05em] text-transparent leading-none select-none px-24"
+                  style={{ WebkitTextStroke: '3px rgba(255,255,255,0.12)' }}
                 >
                   PORTFOLIO
                 </span>
