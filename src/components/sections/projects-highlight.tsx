@@ -29,6 +29,24 @@ const projects = [
       year: '2025',
       image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200',
     },
+    {
+      title: 'LIVE HR Dashboard',
+      category: 'Data Visualization (Tableau)',
+      year: '2024',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200',
+    },
+    {
+      title: 'Stock Market Analysis',
+      category: 'Tableau / Predictive Modeling',
+      year: '2024',
+      image: 'https://images.unsplash.com/photo-1611974717484-24504100c507?auto=format&fit=crop&q=80&w=1200',
+    },
+    {
+      title: 'Supply & PO Tracking',
+      category: 'SQL & Power BI',
+      year: '2025',
+      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200',
+    },
 
 ];
 
