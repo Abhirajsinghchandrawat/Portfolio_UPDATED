@@ -78,25 +78,7 @@ const ToolStack = () => {
       icon: 'https://www.vectorlogo.zone/logos/mixpanel/mixpanel-icon.svg',
       alt: 'Mixpanel Logo',
     },
-    {
-      id: 13,
-      name: 'Web Dev',
-      icon: 'https://www.svgrepo.com/show/349419/javascript.svg',
-      alt: 'Web Dev Logo',
-    },
-    {
-      id: 14,
-      name: 'Excel',
-      icon: 'https://www.svgrepo.com/show/373589/excel.svg',
-      alt: 'Excel Logo',
-    },
-    {
-      id: 15,
-      name: 'Zapier',
-      icon: 'https://www.svgrepo.com/show/354596/zapier-icon.svg',
-      alt: 'Zapier Logo',
-    },
-    ];
+      ];
 
 
 
