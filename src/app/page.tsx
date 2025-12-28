@@ -18,6 +18,7 @@ export default function Home() {
       <AboutSection />
       <ServicesIntro />
       <WhyChooseUs />
+      <ToolsStack />
       <ExperienceSection />
       <ProjectsHighlight />
       <ServiceCards />
