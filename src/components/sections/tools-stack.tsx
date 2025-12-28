@@ -157,14 +157,14 @@ const ToolStack = () => {
                 transition={{ type: "spring", stiffness: 300, damping: 15 }}
                 className="relative w-24 h-24 md:w-32 md:h-32"
               >
-                <Image
-                  src={tool.icon}
-                  alt={tool.alt}
-                  fill
-                  className="object-contain grayscale contrast-125 group-hover:grayscale-0 transition-all duration-500"
-                  sizes="(max-width: 768px) 96px, 128px"
-                  priority={tool.id <= 3}
-                />
+                  <Image
+                    src={tool.icon}
+                    alt={tool.alt}
+                    fill
+                    className="object-contain transition-all duration-500 group-hover:scale-110"
+                    sizes="(max-width: 768px) 96px, 128px"
+                    priority={tool.id <= 3}
+                  />
               </motion.div>
               
               <div className="absolute inset-0 border border-transparent group-hover:border-[#1a1a1a]/5 pointer-events-none transition-colors" />
