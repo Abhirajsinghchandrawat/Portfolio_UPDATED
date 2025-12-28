@@ -87,9 +87,13 @@ const AboutSection = () => {
                 <span className="small-caps text-white">About Me</span>
               </div>
 
-                <h2 className="section-headline text-white leading-[1.1] max-w-[600px] mb-10">
-                  I specialize in transforming raw data into actionable insights — <span className="text-[#999999]">optimizing business efficiency through quantitative analysis.</span>
-                </h2>
+                  <h2 className="section-headline text-white leading-[1.1] max-w-[600px] mb-10">
+                    Highly analytical and impact-driven <span className="text-[#999999]">Data Analyst / Business Analyst</span> with strong hands-on experience in SQL, Python, Power BI, and Tableau.
+                  </h2>
+
+                  <p className="text-[#999999] text-lg mb-10 max-w-[500px] leading-relaxed">
+                    Selected for McKinsey Accelerate Program and winner of a National-Level Case Competition. I specialize in converting raw data into actionable insights and automating reporting workflows.
+                  </p>
 
                 <div className="pointer-events-auto">
                   <a 
