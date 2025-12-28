@@ -24,7 +24,7 @@ const ContactSection = () => {
               </h2>
               
               <a 
-                href="#" 
+                href="#contact" 
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-[#333333] hover:bg-white hover:text-black transition-all duration-300 ease-in-out group"
               >
                 <Plus className="w-4 h-4 text-[#ff5c00] group-hover:text-black" />
