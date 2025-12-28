@@ -9,19 +9,19 @@ const projects = [
       title: 'Uber Rides Analysis',
       category: 'Python (Pandas, Matplotlib)',
       year: '2024',
-      image: 'https://images.unsplash.com/photo-1557333610-90ee4a951ecf?auto=format&fit=crop&q=80&w=1200',
+      image: 'https://images.unsplash.com/photo-1599739291060-4578e77dac5d?auto=format&fit=crop&q=80&w=1200',
     },
     {
       title: 'LIVE HR Dashboard',
       category: 'Data Visualization (Tableau)',
       year: '2024',
-      image: 'https://images.unsplash.com/photo-1551288049-bbbda5366a71?auto=format&fit=crop&q=80&w=1200',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200',
     },
     {
       title: 'Stock Market Analysis',
       category: 'Tableau / Predictive Modeling',
       year: '2024',
-      image: 'https://images.unsplash.com/photo-1611974714158-f88c5f912f20?auto=format&fit=crop&q=80&w=1200',
+      image: 'https://images.unsplash.com/photo-1611974717484-24504100c507?auto=format&fit=crop&q=80&w=1200',
     },
     {
       title: 'Supply & PO Tracking',
