@@ -101,7 +101,25 @@ const HeroSection: React.FC = () => {
                   >
                     <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
                   </svg>
-                </motion.div>
+                <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="mt-6"
+            >
+              <a 
+                href="#" 
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#FF5C00] text-white rounded-full font-medium transition-all hover:bg-[#E65300] hover:scale-105 active:scale-95"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Download Resume
+              </a>
+            </motion.div>
+          </motion.div>
               </a>
             </div>
         </motion.div>
