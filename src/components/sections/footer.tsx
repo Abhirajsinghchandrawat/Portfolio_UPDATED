@@ -99,7 +99,7 @@ const Footer = () => {
         <div className="relative w-full h-[300px] md:h-[600px] flex justify-center items-end overflow-hidden">
           {/* Using a text element for Arqos to match the oversized typography aspect */}
           <h2 className="text-[25vw] leading-[0.8] font-bold text-[#1a1a1a]/30 tracking-tighter transform translate-y-1/4">
-            Arqos®
+            PORTFOLIO
           </h2>
           
           {/* Blur Overlay - smoky effect mentioned in components_styles */}
