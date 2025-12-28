@@ -38,11 +38,11 @@ const Footer = () => {
               <h6 className="text-[10px] md:text-[12px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-2">Navigation</h6>
               <ul className="flex flex-col space-y-2">
                 {[
-                  { name: 'Home', href: '#' },
-                  { name: 'Studio', href: '#about-us' },
-                  { name: 'Project', href: '#projects' },
-                  { name: 'Pricing', href: '#pricing' },
-                  { name: 'Journal', href: '#journal' },
+                  { name: 'Home', href: '#hero' },
+                  { name: 'About', href: '#about' },
+                  { name: 'Projects', href: '#projects' },
+                  { name: 'Services', href: '#services' },
+                  { name: 'Contact', href: '#contact' },
                 ].map((item) => (
                   <li key={item.name}>
                     <a 
@@ -62,9 +62,9 @@ const Footer = () => {
               <h6 className="text-[10px] md:text-[12px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-2">Social Media</h6>
               <ul className="flex flex-col space-y-2">
                 {[
+                  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/abhirajsinghchandrawat/' },
+                  { name: 'GitHub', href: 'https://github.com/abhirajsingh' },
                   { name: 'Twitter', href: 'https://twitter.com' },
-                  { name: 'Linkedin', href: 'https://linkedin.com' },
-                  { name: 'Instagram', href: 'https://instagram.com' },
                 ].map((item) => (
                   <li key={item.name}>
                     <a 
