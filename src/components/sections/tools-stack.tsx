@@ -60,12 +60,12 @@ const ToolStack = () => {
       icon: 'https://cdn.worldvectorlogo.com/logos/mixpanel.svg',
       alt: 'Mixpanel Logo',
     },
-    {
-      id: 10,
-      name: 'Apache Superset',
-      icon: 'https://logo.svgcdn.com/logos/apache-superset.svg',
-      alt: 'Apache Superset Logo',
-    },
+      {
+        id: 10,
+        name: 'Apache Superset',
+        icon: 'https://www.vectorlogo.zone/logos/apache_superset/apache_superset-icon.svg',
+        alt: 'Apache Superset Logo',
+      },
     {
       id: 11,
       name: 'Web Dev',
