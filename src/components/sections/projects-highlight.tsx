@@ -23,7 +23,7 @@ const projects = [
         title: 'Stock Market Analysis',
         category: 'Tableau / Predictive Modeling',
         year: '2024',
-        image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=1200',
+        image: 'https://images.unsplash.com/photo-1611974715855-9c8c20bb16a0?auto=format&fit=crop&q=80&w=1200',
         link: 'https://public.tableau.com/views/StockMarketProjecct/Dashboard1'
       },
     {
