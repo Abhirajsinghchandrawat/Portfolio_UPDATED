@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const HeroSection: React.FC = () => {
   return (
@@ -9,9 +10,14 @@ const HeroSection: React.FC = () => {
       id="hero"
       className="relative w-full h-screen min-h-[800px] md:h-[1080px] bg-black overflow-hidden flex flex-col justify-end px-6 md:px-16 pb-16 md:pb-24"
     >
-      <div className="absolute top-1/2 left-0 w-full -translate-y-1/2 pointer-events-none z-0">
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.4 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+        className="absolute top-1/2 left-0 w-full -translate-y-1/2 pointer-events-none z-0"
+      >
         <div className="flex whitespace-nowrap overflow-hidden">
-          <div className="flex animate-infinite-scroll gap-10 opacity-40">
+          <div className="flex animate-infinite-scroll gap-10">
             {[1, 2, 3, 4, 5].map((i) => (
               <div key={i} className="relative w-[800px] md:w-[1440px] h-[200px] md:h-[400px]">
                 <Image
@@ -25,9 +31,14 @@ const HeroSection: React.FC = () => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+      <motion.div 
+        initial={{ opacity: 0, scale: 1.1, y: 20 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+        className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none"
+      >
         <div className="relative w-full max-w-[904px] h-[760px] translate-y-[-5%]">
           <Image
             src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/09f0a84a-4c96-475d-be87-7924d61c1644-arqos-framer-ai/assets/images/gAOqQ7ashqfpKB5NgxNSCeq2ncc-1.webp"
@@ -37,22 +48,36 @@ const HeroSection: React.FC = () => {
             priority
           />
         </div>
-      </div>
+      </motion.div>
 
       <div className="relative z-20 w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-end justify-between gap-8">
-        <div className="flex flex-col gap-4">
+        <motion.div 
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-col gap-4"
+        >
           <h1 className="hero-title text-white tracking-[-0.05em] uppercase m-0 leading-[0.85]">
             AI-Driven <br className="hidden md:block" /> Studio®
           </h1>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col items-start md:items-end gap-10 md:text-right max-w-[320px]">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-col items-start md:items-end gap-10 md:text-right max-w-[320px]"
+        >
           <p className="text-[#999999] text-[18px] md:text-[20px] leading-[1.3] font-light">
             It’s not just a studio. It’s a design intelligence lab.
           </p>
           
           <div className="flex items-center justify-center">
-            <div className="w-10 h-10 rounded-full bg-[#FF5C00] flex items-center justify-center shadow-lg animate-bounce cursor-pointer">
+            <motion.div 
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="w-10 h-10 rounded-full bg-[#FF5C00] flex items-center justify-center shadow-lg animate-bounce cursor-pointer"
+            >
               <svg 
                 width="16" 
                 height="16" 
@@ -65,9 +90,9 @@ const HeroSection: React.FC = () => {
               >
                 <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
               </svg>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
