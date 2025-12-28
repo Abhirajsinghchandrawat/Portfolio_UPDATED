@@ -14,12 +14,12 @@ const Navbar = () => {
     { label: 'Contact', href: '#contact', number: '4.0' },
   ];
 
-  const dropdownItems = [
-    { label: 'Download Resume', icon: <Download size={16} />, href: '#' },
-    { label: 'LinkedIn', icon: <Linkedin size={16} />, href: 'https://www.linkedin.com/in/abhirajsinghchandrawat/' },
-    { label: 'GitHub', icon: <Github size={16} />, href: 'https://github.com/abhirajsingh' },
-    { label: 'Book a Call', icon: <Phone size={16} />, href: '#contact' },
-  ];
+    const dropdownItems = [
+      { label: 'Download Resume', icon: <Download size={16} />, href: '/resume.pdf' },
+      { label: 'LinkedIn', icon: <Linkedin size={16} />, href: 'https://www.linkedin.com/in/abhirajsinghchandrawat/' },
+      { label: 'GitHub', icon: <Github size={16} />, href: 'https://github.com/abhirajsingh' },
+      { label: 'Book a Call', icon: <Phone size={16} />, href: '#contact' },
+    ];
 
   return (
     <motion.nav 
