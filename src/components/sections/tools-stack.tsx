@@ -48,13 +48,20 @@ const ToolStack = () => {
       icon: 'https://www.svgrepo.com/show/349419/javascript.svg',
       alt: 'Web Dev Logo',
     },
-    {
-      id: 8,
-      name: 'Excel',
-      icon: 'https://www.svgrepo.com/show/373589/excel.svg',
-      alt: 'Excel Logo',
-    },
-  ];
+      {
+        id: 8,
+        name: 'Excel',
+        icon: 'https://www.svgrepo.com/show/373589/excel.svg',
+        alt: 'Excel Logo',
+      },
+      {
+        id: 9,
+        name: 'n8n',
+        icon: 'https://www.svgrepo.com/show/354113/n8n.svg',
+        alt: 'n8n Logo',
+      },
+    ];
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
