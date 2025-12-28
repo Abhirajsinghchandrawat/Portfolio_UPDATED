@@ -72,13 +72,20 @@ const ToolStack = () => {
             icon: 'https://www.vectorlogo.zone/logos/make/make-icon.svg',
             alt: 'Make Logo',
           },
-          {
-            id: 12,
-            name: 'Jira',
-            icon: 'https://www.svgrepo.com/show/353935/jira.svg',
-            alt: 'Jira Logo',
-          },
-        ];
+            {
+              id: 12,
+              name: 'Jira',
+              icon: 'https://www.svgrepo.com/show/353935/jira.svg',
+              alt: 'Jira Logo',
+            },
+            {
+              id: 13,
+              name: 'Confluence',
+              icon: 'https://www.svgrepo.com/show/353606/confluence.svg',
+              alt: 'Confluence Logo',
+            },
+          ];
+
 
 
   const containerVariants = {
