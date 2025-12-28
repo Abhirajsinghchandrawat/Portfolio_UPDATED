@@ -154,46 +154,32 @@ export default function ServiceCards() {
         based on the original design screenshots 
       */}
       
-      {/* AI-Custom Automations */}
+      {/* Data Analytics & Programming */}
       <ServiceCard
-        number="4"
-        title="AI-Custom Automations"
-        description="Train your brand guidelines into our tools to generate content, UI mocks, assets, and even microcopy in minutes."
-        tags={["AI DESIGN AUTOMATION", "WORKFLOW AUTOMATION", "API-DRIVEN DESIGN", "GPT-POWERED DESIGN"]}
+        number="1"
+        title="Data Analytics & Programming"
+        description="Transforming complex datasets into actionable insights using SQL, Python, and R. Expert in Data Lifecycle Management and Quantitative Analysis."
+        tags={["SQL", "PYTHON", "DATA VISUALIZATION", "AGENTIC AI", "TABLEAU"]}
         plusCount={2}
         markerPos={{ top: "100px", left: "64px" }}
       />
 
-      {/* Numerical marker "2" floating between sections as seen in layout */}
-      <div className="relative h-0">
-         <div className="absolute right-16 -top-20 z-10 hidden lg:flex items-center justify-center bg-[#ff5c00] text-white text-[11px] font-bold rounded-full w-[26px] h-[34px]">
-          2
-        </div>
-      </div>
-
-      {/* Web Design & Dev */}
+      {/* Productivity & Collaboration */}
       <ServiceCard
-        number="3"
-        title="Web Design & Dev."
-        description="Rapid prototyping with AI-generated layouts and component libraries. Built using Webflow, Framer, React, or custom stacks."
-        tags={["AI-ENHANCED UI", "SMART WEB", "AI-PROTOTYPING", "FRAMER WEBSITE"]}
+        number="2"
+        title="Productivity & Collaboration"
+        description="Streamlining business processes using Agile methodologies, Alteryx, and effective Stakeholder Management."
+        tags={["AGILE", "ALTERYX", "PROJECT MANAGEMENT", "BRDS"]}
         plusCount={3}
         markerPos={{ top: "100px", left: "64px" }}
       />
 
-      {/* Numerical marker "3" right side */}
-      <div className="relative h-0">
-         <div className="absolute right-16 top-0 z-10 hidden lg:flex items-center justify-center bg-[#ff5c00] text-white text-[11px] font-bold rounded-full w-[26px] h-[34px]">
-          3
-        </div>
-      </div>
-
-      {/* AI Product Design with Accordion */}
+      {/* Business & Problem-Solving with Accordion */}
       <ServiceCard
-        number="2"
-        title="AI Product Design"
-        description="We combine design thinking and AI assistance to accelerate UX flows and wireframes with user-tested precision."
-        tags={["WEB APPS", "MOBILE INTERFACES", "SAAS", "LOVABLE PRODUCT"]}
+        number="3"
+        title="Business & Problem-Solving"
+        description="Conducting market research and gap analysis to identify inefficiencies and recommend data-backed solutions."
+        tags={["BUSINESS ANALYSIS", "MARKET RESEARCH", "INDUSTRY INSIGHTS", "GAP ANALYSIS"]}
         plusCount={2}
         markerPos={{ top: "100px", left: "64px" }}
         videoSrc="https://framerusercontent.com/assets/YGCRLOYUT2hM3utfP2hTzMt2k6Y.mp4"
