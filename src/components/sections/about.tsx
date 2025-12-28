@@ -4,9 +4,8 @@ import React, { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 /**
- * About Section for Arqos® Studio
- * Features a sticky video on the left and scrolling narrative text on the right.
- * Transitions between "Empowered by AI. Driven by Human Vision" and the mission statement.
+ * About Section for Abhiraj Singh Chandrawat
+ * Features a sticky media on the left and scrolling narrative text on the right.
  */
 const AboutSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
