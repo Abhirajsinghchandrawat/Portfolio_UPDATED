@@ -33,7 +33,7 @@ const ToolStack = () => {
     {
       id: 5,
       name: 'Mixpanel',
-      icon: 'https://www.svgrepo.com/show/354071/mixpanel.svg',
+      icon: 'https://www.vectorlogo.zone/logos/mixpanel/mixpanel-icon.svg',
       alt: 'Mixpanel Logo',
     },
     {
@@ -57,8 +57,14 @@ const ToolStack = () => {
       {
         id: 9,
         name: 'n8n',
-        icon: 'https://www.svgrepo.com/show/354113/n8n.svg',
+        icon: 'https://logo.svgcdn.com/simple-icons/n8n-dark.svg',
         alt: 'n8n Logo',
+      },
+      {
+        id: 10,
+        name: 'Zapier',
+        icon: 'https://www.svgrepo.com/show/354596/zapier-icon.svg',
+        alt: 'Zapier Logo',
       },
     ];
 
