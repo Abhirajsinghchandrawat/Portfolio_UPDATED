@@ -73,12 +73,12 @@ export default function ProjectsHighlight() {
             </span>
           </div>
           
-          <div className="mt-8 md:mt-0 md:absolute md:left-1/2 md:-translate-x-1/2">
-            <h2 className="text-[48px] md:text-[64px] lg:text-[84px] leading-[0.9] font-medium tracking-[-0.05em] text-[#1A1A1A]">
-              Al-crafted<br />
-              <span className="text-[#999999]">design</span> highlights
-            </h2>
-          </div>
+            <div className="mt-8 md:mt-0 md:absolute md:left-1/2 md:-translate-x-1/2">
+              <h2 className="text-[48px] md:text-[64px] lg:text-[84px] leading-[0.9] font-medium tracking-[-0.05em] text-[#1A1A1A]">
+                Data-driven<br />
+                <span className="text-[#999999]">analytical</span> highlights
+              </h2>
+            </div>
 
           <div className="hidden md:flex items-center justify-center w-8 h-10 bg-[#FF5C00] rounded-full text-white font-bold text-[14px]">
             6
