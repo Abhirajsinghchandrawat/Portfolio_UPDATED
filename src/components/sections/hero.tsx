@@ -46,21 +46,26 @@ const HeroSection: React.FC = () => {
           </div>
 
           <motion.div 
-            initial={{ opacity: 0, scale: 1.1, y: 20 }}
+            initial={{ opacity: 0, scale: 1, y: 0 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
             className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none"
           >
-            <div className="relative w-full max-w-[650px] h-[550px] translate-y-[-5%] mix-blend-screen">
-                  <Image
-                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Gemini_Generated_Image_bf98cgbf98cgbf98-1766929311254.png?width=8000&height=8000&resize=contain"
-                    alt="Abhiraj Singh Chandrawat - Data Analyst"
-                    fill
-                    className="object-contain"
-                    priority
-                  />
-                </div>
-
+            <div className="relative w-full max-w-[900px] h-[800px] md:h-full flex items-center justify-center translate-y-[5%]">
+              <div className="relative w-full h-full mix-blend-screen opacity-90 scale-110">
+                <Image
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Gemini_Generated_Image_bf98cgbf98cgbf98-1766929311254.png?width=8000&height=8000&resize=contain"
+                  alt="Abhiraj Singh Chandrawat - Data Analyst"
+                  fill
+                  className="object-contain"
+                  style={{
+                    maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%), linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%)',
+                    WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%), linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%)',
+                  }}
+                  priority
+                />
+              </div>
+            </div>
           </motion.div>
 
         <div className="relative z-20 w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-end justify-between gap-8">
