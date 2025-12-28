@@ -70,26 +70,28 @@ const HeroSection: React.FC = () => {
               Consultant & Data Analyst. Navigating ambiguity with data-driven precision.
             </p>
           
-          <div className="flex items-center justify-center">
-            <motion.div 
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-10 h-10 rounded-full bg-[#FF5C00] flex items-center justify-center shadow-lg animate-bounce cursor-pointer"
-            >
-              <svg 
-                width="16" 
-                height="16" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="white" 
-                strokeWidth="2.5" 
-                strokeLinecap="round" 
-                strokeLinejoin="round"
-              >
-                <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
-              </svg>
-            </motion.div>
-          </div>
+            <div className="flex items-center justify-center">
+              <a href="#about">
+                <motion.div 
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                  className="w-10 h-10 rounded-full bg-[#FF5C00] flex items-center justify-center shadow-lg animate-bounce cursor-pointer"
+                >
+                  <svg 
+                    width="16" 
+                    height="16" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="white" 
+                    strokeWidth="2.5" 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round"
+                  >
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+                  </svg>
+                </motion.div>
+              </a>
+            </div>
         </motion.div>
       </div>
     </section>
