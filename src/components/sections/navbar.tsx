@@ -1,4 +1,7 @@
+"use client";
+
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const navLinks = [
@@ -9,33 +12,44 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-[100] glass-nav px-8 py-6 flex items-center justify-between">
+    <motion.nav 
+      initial={{ y: -20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="fixed top-0 left-0 w-full z-[100] glass-nav px-8 py-6 flex items-center justify-between"
+    >
       {/* Navigation Links */}
       <div className="flex items-center gap-10">
-        {navLinks.map((link) => (
-          <a
+        {navLinks.map((link, index) => (
+          <motion.a
             key={link.label}
             href={link.href}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 * index + 0.5, duration: 0.5 }}
             className="group flex items-center gap-2 transition-opacity hover:opacity-70"
           >
             <span 
-              className="text-[10px] font-semibold text-text-secondary tracking-widest transition-colors group-hover:text-white"
-              style={{ fontFamily: 'Inter, sans-serif' }}
+              className="text-[10px] font-semibold text-[#999999] tracking-widest transition-colors group-hover:text-white"
             >
               {link.number}
             </span>
             <span 
               className="text-[13px] font-medium text-white tracking-wide"
-              style={{ fontFamily: 'Inter, sans-serif' }}
             >
               {link.label}
             </span>
-          </a>
+          </motion.a>
         ))}
       </div>
 
       {/* Grid Menu Button */}
-      <div className="flex items-center">
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 1, duration: 0.5 }}
+        className="flex items-center"
+      >
         <button 
           className="flex items-center justify-center w-[84px] h-[36px] bg-[#0E0E0E] border border-[#1F1F1F] rounded-sm hover:bg-[#1F1F1F] transition-all duration-300 active:scale-95"
           aria-label="Menu"
@@ -49,8 +63,8 @@ const Navbar = () => {
             ))}
           </div>
         </button>
-      </div>
-    </nav>
+      </motion.div>
+    </motion.nav>
   );
 };
 
