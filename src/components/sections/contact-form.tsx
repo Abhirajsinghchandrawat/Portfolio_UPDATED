@@ -4,6 +4,10 @@ import React from 'react';
 import { Plus } from 'lucide-react';
 
 const ContactSection = () => {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+  };
+
   return (
     <section className="bg-[#000000] text-white py-[80px] md:py-[120px] lg:py-[160px] px-6 md:px-10 lg:px-20 overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
@@ -41,7 +45,7 @@ const ContactSection = () => {
 
           {/* Right Column: Minimalist Form */}
           <div className="flex flex-col gap-10">
-            <form className="flex flex-col gap-10" onSubmit={(e) => e.preventDefault()}>
+            <form className="flex flex-col gap-10" onSubmit={handleSubmit}>
               <div className="group relative">
                 <label className="small-caps mb-3 block text-[#999999] group-focus-within:text-white transition-colors">
                   Enter Name
