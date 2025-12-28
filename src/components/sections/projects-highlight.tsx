@@ -1,5 +1,8 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const projects = [
   {
@@ -29,11 +32,40 @@ const projects = [
 ];
 
 export default function ProjectsHighlight() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: [0.16, 1, 0.3, 1]
+      }
+    }
+  };
+
   return (
     <section className="bg-[#EFEEEA] pt-40 pb-20 px-6 md:px-10 lg:px-20 overflow-hidden">
       <div className="max-w-[1440px] mx-auto">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start mb-20 relative">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col md:flex-row justify-between items-start mb-20 relative"
+        >
           <div className="flex items-center gap-3">
             <span className="text-[#FF5C00] text-[20px]">+</span>
             <span className="font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[#1A1A1A]">
@@ -51,14 +83,24 @@ export default function ProjectsHighlight() {
           <div className="hidden md:flex items-center justify-center w-8 h-10 bg-[#FF5C00] rounded-full text-white font-bold text-[14px]">
             6
           </div>
-        </div>
+        </motion.div>
 
         {/* Portfolio Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-12">
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-12"
+        >
           {projects.map((project, index) => (
-            <div key={index} className="group cursor-pointer">
+            <motion.div 
+              key={index} 
+              variants={itemVariants}
+              className="group cursor-pointer"
+            >
               {/* Image Container */}
-              <div className="aspect-[4/3] md:aspect-[3/2.2] overflow-hidden bg-[#141414] mb-6 relative">
+              <div className="aspect-[4/3] md:aspect-[3/2.2] overflow-hidden bg-[#141414] mb-6 relative rounded-[12px]">
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -66,11 +108,15 @@ export default function ProjectsHighlight() {
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-                {/* Overlay Text for specific images if needed, but styling from screenshots shows text is often inside the image/custom */}
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <h3 className="text-white text-[32px] md:text-[42px] font-medium tracking-tight">
+                {/* Overlay Text */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none bg-black/20 group-hover:bg-black/10 transition-colors duration-500">
+                  <motion.h3 
+                    initial={{ opacity: 0.8 }}
+                    whileHover={{ opacity: 1, scale: 1.05 }}
+                    className="text-white text-[32px] md:text-[42px] font-medium tracking-tight drop-shadow-lg"
+                  >
                     {project.title}
-                  </h3>
+                  </motion.h3>
                 </div>
               </div>
 
@@ -86,9 +132,9 @@ export default function ProjectsHighlight() {
                   {project.year}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
