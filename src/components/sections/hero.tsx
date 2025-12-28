@@ -10,26 +10,19 @@ const HeroSection: React.FC = () => {
       id="hero"
       className="relative w-full h-screen min-h-[800px] md:h-[1080px] bg-black overflow-hidden flex flex-col justify-end px-6 md:px-16 pb-16 md:pb-24"
     >
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.2 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
-        className="absolute top-1/2 left-0 w-full -translate-y-1/2 pointer-events-none z-0 overflow-hidden"
-      >
-        <div className="flex whitespace-nowrap">
-          <div className="flex animate-infinite-scroll gap-20 py-10">
-            {[1, 2, 3].map((i) => (
-              <span 
-                key={i} 
-                className="text-[120px] md:text-[280px] font-black uppercase tracking-[-0.05em] text-transparent stroke-text"
-                style={{ WebkitTextStroke: '1px rgba(255,255,255,0.1)' }}
-              >
-                PORTFOLIO
-              </span>
-            ))}
-          </div>
-        </div>
-      </motion.div>
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.15 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0 w-full text-center"
+        >
+          <h2 
+            className="text-[120px] md:text-[280px] lg:text-[400px] font-black uppercase tracking-[-0.05em] text-transparent stroke-text leading-none select-none"
+            style={{ WebkitTextStroke: '1px rgba(255,255,255,0.2)' }}
+          >
+            PORTFOLIO
+          </h2>
+        </motion.div>
 
       <motion.div 
         initial={{ opacity: 0, scale: 1.1, y: 20 }}
