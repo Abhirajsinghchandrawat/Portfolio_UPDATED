@@ -57,13 +57,13 @@ const ProjectsGrid: React.FC = () => {
             </span>
           </div>
 
-          <div className="md:ml-24">
-            <h2 className="text-[48px] md:text-[72px] font-medium leading-[1.1] text-black tracking-[-0.03em]">
-              AI-crafted <br />
-              <span className="text-[#8a8a8a]">design </span>
-              highlights
-            </h2>
-          </div>
+            <div className="md:ml-24">
+              <h2 className="text-[48px] md:text-[72px] font-medium leading-[1.1] text-black tracking-[-0.03em]">
+                Featured <br />
+                <span className="text-[#8a8a8a]">project </span>
+                highlights
+              </h2>
+            </div>
 
           <div className="absolute top-0 right-0 hidden md:block">
             <div className="bg-[#ff5c00] text-white w-9 h-9 flex items-center justify-center rounded-full text-[12px] font-bold">
