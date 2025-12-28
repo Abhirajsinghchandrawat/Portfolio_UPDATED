@@ -7,17 +7,18 @@ const ValuePropsSection = () => {
       <div className="max-w-[1440px] mx-auto">
         {/* Section Header */}
         <div className="grid grid-cols-12 gap-8 mb-20 items-start">
-          <div className="col-span-12 md:col-span-3 flex items-center gap-2">
-            <span className="text-[#FF5C00] text-xl font-light">+</span>
-            <span className="text-[12px] font-semibold uppercase tracking-widest text-[#000000]/60">Why Choose Arqos?</span>
-          </div>
-          <div className="col-span-12 md:col-span-6">
-            <h2 className="text-[48px] md:text-[64px] leading-[1.1] font-medium tracking-tight text-[#1a1a1a]">
-              Clarity, Speed, and <br />
-              Intelligence — <br />
-              <span className="text-[#000000]/40">Arqos Way</span>
-            </h2>
-          </div>
+            <div className="col-span-12 md:col-span-3 flex items-center gap-2">
+              <span className="text-[#FF5C00] text-xl font-light">+</span>
+              <span className="text-[12px] font-semibold uppercase tracking-widest text-[#000000]/60">Why Choose Me?</span>
+            </div>
+            <div className="col-span-12 md:col-span-6">
+              <h2 className="text-[48px] md:text-[64px] leading-[1.1] font-medium tracking-tight text-[#1a1a1a]">
+                Clarity, Speed, and <br />
+                Intelligence — <br />
+                <span className="text-[#000000]/40">My Way</span>
+              </h2>
+            </div>
+
           <div className="col-span-12 md:col-span-3 flex justify-end">
              <div className="w-[32px] h-[48px] bg-[#FF5C00] rounded-full flex items-center justify-center text-white text-[12px] font-bold">
                4
