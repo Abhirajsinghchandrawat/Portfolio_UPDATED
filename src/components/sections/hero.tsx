@@ -34,11 +34,13 @@ const HeroSection: React.FC = () => {
                 />
               </div>
             ))}
+            </div>
           </div>
         </div>
       </div>
 
       {/* 2. Middle Layer: High-contrast profile image */}
+
       <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
         <div className="relative w-full max-w-[904px] h-[760px] translate-y-[-5%]">
           <Image
