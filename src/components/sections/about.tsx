@@ -58,10 +58,10 @@ const AboutSection = () => {
             style={{ opacity: firstTextBlockOpacity }}
             className="absolute inset-0 flex flex-col justify-center px-10 md:px-20 lg:pr-32 lg:pl-0 pointer-events-none"
           >
-             <div className="flex items-center gap-12 mb-8">
-                <span className="font-display text-[16px] text-white font-medium tracking-tight">Arqos®</span>
-                <span className="font-display text-[16px] text-white font-medium tracking-tight">©2025</span>
-             </div>
+               <div className="flex items-center gap-12 mb-8">
+                  <span className="font-display text-[16px] text-white font-medium tracking-tight uppercase">Abhiraj</span>
+                  <span className="font-display text-[16px] text-white font-medium tracking-tight">©2025</span>
+               </div>
              
              <div className="w-[60px] h-[1px] bg-[#333333] mb-12" />
 
