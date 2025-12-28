@@ -9,7 +9,6 @@ const HeroSection: React.FC = () => {
       id="hero"
       className="relative w-full h-screen min-h-[800px] md:h-[1080px] bg-black overflow-hidden flex flex-col justify-end px-6 md:px-16 pb-16 md:pb-24"
     >
-      {/* 1. Behind everything: The metallic text ticker "STUDIO" */}
       <div className="absolute top-1/2 left-0 w-full -translate-y-1/2 pointer-events-none z-0">
         <div className="flex whitespace-nowrap overflow-hidden">
           <div className="flex animate-infinite-scroll gap-10 opacity-40">
@@ -28,7 +27,6 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      {/* 2. Middle Layer: High-contrast profile image */}
       <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
         <div className="relative w-full max-w-[904px] h-[760px] translate-y-[-5%]">
           <Image
@@ -41,7 +39,6 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      {/* 3. Foreground Layer: Headlines and UI */}
       <div className="relative z-20 w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-end justify-between gap-8">
         <div className="flex flex-col gap-4">
           <h1 className="hero-title text-white tracking-[-0.05em] uppercase m-0 leading-[0.85]">
