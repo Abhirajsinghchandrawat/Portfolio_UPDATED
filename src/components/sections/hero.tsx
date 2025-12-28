@@ -78,9 +78,9 @@ const HeroSection: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
               className="flex flex-col items-start md:items-end gap-10 md:text-right max-w-[320px]"
             >
-              <p className="text-[#999999] text-[18px] md:text-[20px] leading-[1.3] font-light">
-                Consultant & Data Analyst. Navigating ambiguity with data-driven precision.
-              </p>
+        <p className="text-[#999999] text-[18px] md:text-[20px] leading-[1.3] font-light">
+          Data Analyst | Business Analyst | AI & Automation Enthusiast
+        </p>
             
               <div className="flex flex-col items-start md:items-end gap-6">
                 <motion.div 
