@@ -54,12 +54,12 @@ const ToolStack = () => {
       icon: 'https://www.svgrepo.com/show/354425/tableau-icon.svg',
       alt: 'Tableau Logo',
     },
-    {
-      id: 9,
-      name: 'Mixpanel',
-      icon: 'https://cdn.worldvectorlogo.com/logos/mixpanel.svg',
-      alt: 'Mixpanel Logo',
-    },
+      {
+        id: 9,
+        name: 'Mixpanel',
+        icon: 'https://www.vectorlogo.zone/logos/mixpanel/mixpanel-icon.svg',
+        alt: 'Mixpanel Logo',
+      },
       {
         id: 10,
         name: 'Apache Superset',
