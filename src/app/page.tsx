@@ -21,7 +21,7 @@ export default function Home() {
       <ExperienceSection />
       <ProjectsHighlight />
       <ServiceCards />
-      <ToolsStack />
+
       <ContactForm />
       <Footer />
     </main>
