@@ -43,22 +43,22 @@ const HeroSection: React.FC = () => {
             </motion.div>
           </div>
 
-        <motion.div 
-          initial={{ opacity: 0, scale: 1.1, y: 20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-          className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none"
-        >
-            <div className="relative w-full max-w-[904px] h-[760px] translate-y-[-5%]">
-              <Image
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/09f0a84a-4c96-475d-be87-7924d61c1644-arqos-framer-ai/assets/images/gAOqQ7ashqfpKB5NgxNSCeq2ncc-1.webp"
-                alt="Abhiraj Singh Chandrawat - Data Analyst"
-                fill
-                className="object-contain"
-                priority
-              />
-            </div>
-        </motion.div>
+          <motion.div 
+            initial={{ opacity: 0, scale: 1.1, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+            className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none"
+          >
+              <div className="relative w-full max-w-[904px] h-[760px] translate-y-[-5%]">
+                <Image
+                  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Gemini_Generated_Image_bf98cgbf98cgbf98-1766929311254.png?width=8000&height=8000&resize=contain"
+                  alt="Abhiraj Singh Chandrawat - Data Analyst"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+          </motion.div>
 
         <div className="relative z-20 w-full max-w-[1440px] mx-auto flex flex-col md:flex-row items-end justify-between gap-8">
           <motion.div 
