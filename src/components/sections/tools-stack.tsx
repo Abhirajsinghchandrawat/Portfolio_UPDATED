@@ -108,12 +108,12 @@ const ToolStack = () => {
       icon: 'https://www.vectorlogo.zone/logos/alteryx/alteryx-icon.svg',
       alt: 'Alteryx Logo',
     },
-    {
-      id: 18,
-      name: 'R',
-      icon: 'https://www.vectorlogo.zone/logos/r-project/r-project-icon.svg',
-      alt: 'R Logo',
-    },
+      {
+        id: 18,
+        name: 'R',
+        icon: 'https://www.svgrepo.com/show/354238/r-lang.svg',
+        alt: 'R Logo',
+      },
   ];
 
 
