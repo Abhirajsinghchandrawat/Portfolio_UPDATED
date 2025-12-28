@@ -95,20 +95,7 @@ const AboutSection = () => {
                     Selected for McKinsey Accelerate Program and winner of a National-Level Case Competition. I specialize in converting raw data into actionable insights and automating reporting workflows.
                   </p>
 
-                      <div className="pointer-events-auto mt-8">
-                          <a 
-                            href="/resume.pdf" 
-                            download
-                            className="inline-flex items-center gap-6 px-16 py-8 bg-[#FF5C00] text-white rounded-full font-black text-3xl transition-all hover:bg-[#FF7A33] hover:scale-110 active:scale-95 shadow-[0_0_50px_rgba(255,92,0,0.6)] hover:shadow-[0_0_80px_rgba(255,92,0,0.8)] border-4 border-[#FF7A33] group"
-                          >
-                          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:-translate-y-1">
-                          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                          <polyline points="7 10 12 15 17 10" />
-                          <line x1="12" y1="15" x2="12" y2="3" />
-                        </svg>
-                        Download Resume
-                      </a>
-                    </div>
+
               </motion.div>
 
 
