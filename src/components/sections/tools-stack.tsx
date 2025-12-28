@@ -8,95 +8,113 @@ const ToolStack = () => {
   const tools = [
     {
       id: 1,
+      name: 'ChatGPT',
+      icon: 'https://www.svgrepo.com/show/306500/openai.svg',
+      alt: 'ChatGPT Logo',
+    },
+    {
+      id: 2,
+      name: 'Claude',
+      icon: 'https://www.vectorlogo.zone/logos/anthropic/anthropic-icon.svg',
+      alt: 'Claude Logo',
+    },
+    {
+      id: 3,
+      name: 'Jira',
+      icon: 'https://www.svgrepo.com/show/353935/jira.svg',
+      alt: 'Jira Logo',
+    },
+    {
+      id: 4,
+      name: 'Confluence',
+      icon: 'https://www.svgrepo.com/show/353606/confluence.svg',
+      alt: 'Confluence Logo',
+    },
+    {
+      id: 5,
       name: 'SQL',
       icon: 'https://www.svgrepo.com/show/331760/sql-database-generic.svg',
       alt: 'SQL Logo',
     },
     {
-      id: 2,
+      id: 6,
       name: 'Python',
       icon: 'https://www.svgrepo.com/show/452091/python.svg',
       alt: 'Python Logo',
     },
     {
-      id: 3,
+      id: 7,
       name: 'Power BI',
       icon: 'https://www.svgrepo.com/show/354202/power-bi.svg',
       alt: 'Power BI Logo',
     },
     {
-      id: 4,
+      id: 8,
       name: 'Tableau',
       icon: 'https://www.svgrepo.com/show/354425/tableau-icon.svg',
       alt: 'Tableau Logo',
     },
-      {
-        id: 5,
-        name: 'Mixpanel',
-        icon: 'https://cdn.worldvectorlogo.com/logos/mixpanel.svg',
-        alt: 'Mixpanel Logo',
-      },
-      {
-        id: 6,
-        name: 'Apache Superset',
-        icon: 'https://logo.svgcdn.com/logos/apache-superset.svg',
-        alt: 'Apache Superset Logo',
-      },
-      {
-        id: 7,
-        name: 'Web Dev',
-        icon: 'https://www.svgrepo.com/show/349419/javascript.svg',
-        alt: 'Web Dev Logo',
-      },
-        {
-          id: 8,
-          name: 'Excel',
-          icon: 'https://www.svgrepo.com/show/373589/excel.svg',
-          alt: 'Excel Logo',
-        },
-        {
-          id: 9,
-          name: 'n8n',
-          icon: 'https://www.vectorlogo.zone/logos/n8n/n8n-icon.svg',
-          alt: 'n8n Logo',
-        },
-        {
-          id: 10,
-          name: 'Zapier',
-          icon: 'https://www.svgrepo.com/show/354596/zapier-icon.svg',
-          alt: 'Zapier Logo',
-        },
-          {
-            id: 11,
-            name: 'Make.com',
-            icon: 'https://www.vectorlogo.zone/logos/make/make-icon.svg',
-            alt: 'Make Logo',
-          },
-            {
-              id: 12,
-              name: 'Jira',
-              icon: 'https://www.svgrepo.com/show/353935/jira.svg',
-              alt: 'Jira Logo',
-            },
-              {
-                id: 13,
-                name: 'Confluence',
-                icon: 'https://www.svgrepo.com/show/353606/confluence.svg',
-                alt: 'Confluence Logo',
-              },
-              {
-                id: 14,
-                name: 'ChatGPT',
-                icon: 'https://www.svgrepo.com/show/306500/openai.svg',
-                alt: 'ChatGPT Logo',
-              },
-              {
-                id: 15,
-                name: 'Claude',
-                icon: 'https://www.vectorlogo.zone/logos/anthropic/anthropic-icon.svg',
-                alt: 'Claude Logo',
-              },
-            ];
+    {
+      id: 9,
+      name: 'Mixpanel',
+      icon: 'https://cdn.worldvectorlogo.com/logos/mixpanel.svg',
+      alt: 'Mixpanel Logo',
+    },
+    {
+      id: 10,
+      name: 'Apache Superset',
+      icon: 'https://logo.svgcdn.com/logos/apache-superset.svg',
+      alt: 'Apache Superset Logo',
+    },
+    {
+      id: 11,
+      name: 'Web Dev',
+      icon: 'https://www.svgrepo.com/show/349419/javascript.svg',
+      alt: 'Web Dev Logo',
+    },
+    {
+      id: 12,
+      name: 'Excel',
+      icon: 'https://www.svgrepo.com/show/373589/excel.svg',
+      alt: 'Excel Logo',
+    },
+    {
+      id: 13,
+      name: 'n8n',
+      icon: 'https://www.vectorlogo.zone/logos/n8n/n8n-icon.svg',
+      alt: 'n8n Logo',
+    },
+    {
+      id: 14,
+      name: 'Zapier',
+      icon: 'https://www.svgrepo.com/show/354596/zapier-icon.svg',
+      alt: 'Zapier Logo',
+    },
+    {
+      id: 15,
+      name: 'Make.com',
+      icon: 'https://www.vectorlogo.zone/logos/make/make-icon.svg',
+      alt: 'Make Logo',
+    },
+    {
+      id: 16,
+      name: 'Snowflake',
+      icon: 'https://www.svgrepo.com/show/354366/snowflake-icon.svg',
+      alt: 'Snowflake Logo',
+    },
+    {
+      id: 17,
+      name: 'Alteryx',
+      icon: 'https://www.vectorlogo.zone/logos/alteryx/alteryx-icon.svg',
+      alt: 'Alteryx Logo',
+    },
+    {
+      id: 18,
+      name: 'R',
+      icon: 'https://www.svgrepo.com/show/354252/r-lang.svg',
+      alt: 'R Logo',
+    },
+  ];
 
 
 
