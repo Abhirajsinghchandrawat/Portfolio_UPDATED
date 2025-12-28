@@ -163,9 +163,9 @@ const ToolStack = () => {
           </div>
 
                   <div className="hidden md:flex absolute right-0 top-0">
-                        <div className="orange-pill h-8 w-8 !p-0 flex items-center justify-center font-bold">
-                          18
-                        </div>
+<div className="orange-pill h-8 w-8 !p-0 flex items-center justify-center font-bold">
+                            15
+                          </div>
                   </div>
 
         </div>
