@@ -39,18 +39,19 @@ const WhyChooseUs = () => {
           variants={containerVariants}
           className="grid grid-cols-12 gap-6 mb-24"
         >
-          <motion.div variants={itemVariants} className="col-span-12 lg:col-span-4 self-start flex items-center gap-2">
-            <span className="text-[#FF5C00] font-bold">+</span>
-            <span className="font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[#666666]">
-              Why Choose Arqos?
-            </span>
-          </motion.div>
-          <motion.div variants={itemVariants} className="col-span-12 lg:col-span-6">
-            <h2 className="text-[40px] md:text-[64px] lg:text-[72px] leading-[0.9] tracking-[-0.05em] text-[#1A1A1A] font-medium">
-              Clarity, Speed, and Intelligence — <br />
-              <span className="text-[#999999]">Arqos Way</span>
-            </h2>
-          </motion.div>
+            <motion.div variants={itemVariants} className="col-span-12 lg:col-span-4 self-start flex items-center gap-2">
+              <span className="text-[#FF5C00] font-bold">+</span>
+              <span className="font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[#666666]">
+                Why Choose Me?
+              </span>
+            </motion.div>
+            <motion.div variants={itemVariants} className="col-span-12 lg:col-span-6">
+              <h2 className="text-[40px] md:text-[64px] lg:text-[72px] leading-[0.9] tracking-[-0.05em] text-[#1A1A1A] font-medium">
+                Clarity, Speed, and Intelligence — <br />
+                <span className="text-[#999999]">My Way</span>
+              </h2>
+            </motion.div>
+
           <motion.div variants={itemVariants} className="col-span-12 lg:col-span-2 flex justify-end items-start mt-4 lg:mt-0">
             <div className="bg-[#FF5C00] text-white rounded-full w-8 h-10 flex items-center justify-center text-[14px] font-bold">
               4
