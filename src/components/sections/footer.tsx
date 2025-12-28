@@ -9,27 +9,27 @@ const Footer = () => {
       <div className="container relative z-10">
         <div className="flex flex-col md:flex-row md:justify-between md:items-start space-y-12 md:space-y-0 pb-20">
           
-          {/* Left Side: Contact Info */}
-          <div className="flex flex-col space-y-6">
-            <div className="flex items-center space-x-2">
-              <span className="text-accent text-xl">+</span>
-              <a 
-                href="tel:33334554355" 
-                className="text-white hover:text-accent transition-colors duration-300 font-sans text-sm md:text-base tracking-tight"
-              >
-                (333)34554355
-              </a>
-            </div>
-            <div className="flex flex-col">
-                <span className="text-muted-foreground text-sm uppercase tracking-widest font-mono mb-2">Let's Talk</span>
+            {/* Left Side: Contact Info */}
+            <div className="flex flex-col space-y-6">
+              <div className="flex items-center space-x-2">
+                <span className="text-accent text-xl">+</span>
                 <a 
-                  href="mailto:abhirajsinghchandrawat@gmail.com" 
-                  className="text-white hover:text-accent transition-colors duration-300 text-2xl md:text-4xl lg:text-5xl font-medium tracking-tighter"
+                  href="tel:+919664673445" 
+                  className="text-white hover:text-accent transition-colors duration-300 font-sans text-sm md:text-base tracking-tight"
                 >
-                  abhirajsinghchandrawat@gmail.com
+                  +91-9664673445
                 </a>
               </div>
-            </div>
+              <div className="flex flex-col">
+                  <span className="text-muted-foreground text-sm uppercase tracking-widest font-mono mb-2">Let's Talk</span>
+                  <a 
+                    href="mailto:abhirajsingh.chandrawat1@gmail.com" 
+                    className="text-white hover:text-accent transition-colors duration-300 text-2xl md:text-4xl lg:text-5xl font-medium tracking-tighter break-all md:break-normal"
+                  >
+                    abhirajsingh.chandrawat1@gmail.com
+                  </a>
+                </div>
+              </div>
 
           {/* Right Side: Links Grid */}
           <div className="flex flex-row space-x-12 md:space-x-24 lg:space-x-32">
