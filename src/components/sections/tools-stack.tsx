@@ -78,13 +78,25 @@ const ToolStack = () => {
               icon: 'https://www.svgrepo.com/show/353935/jira.svg',
               alt: 'Jira Logo',
             },
-            {
-              id: 13,
-              name: 'Confluence',
-              icon: 'https://www.svgrepo.com/show/353606/confluence.svg',
-              alt: 'Confluence Logo',
-            },
-          ];
+              {
+                id: 13,
+                name: 'Confluence',
+                icon: 'https://www.svgrepo.com/show/353606/confluence.svg',
+                alt: 'Confluence Logo',
+              },
+              {
+                id: 14,
+                name: 'ChatGPT',
+                icon: 'https://www.svgrepo.com/show/306500/openai.svg',
+                alt: 'ChatGPT Logo',
+              },
+              {
+                id: 15,
+                name: 'Claude',
+                icon: 'https://www.vectorlogo.zone/logos/anthropic/anthropic-icon.svg',
+                alt: 'Claude Logo',
+              },
+            ];
 
 
 
