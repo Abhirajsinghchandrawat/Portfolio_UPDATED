@@ -60,25 +60,24 @@ const Footer = () => {
             {/* Social Media */}
             <div className="flex flex-col space-y-4">
               <h6 className="text-[10px] md:text-[12px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-2">Social Media</h6>
-              <ul className="flex flex-col space-y-2">
-                {[
-                  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/abhirajsinghchandrawat/' },
-                  { name: 'GitHub', href: 'https://github.com/abhirajsingh' },
-                  { name: 'Twitter', href: 'https://twitter.com' },
-                ].map((item) => (
-                  <li key={item.name}>
-                    <a 
-                      href={item.href} 
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group flex items-center text-white/80 hover:text-white transition-colors duration-300 text-sm md:text-base"
-                    >
-                      {item.name}
-                      <ArrowUpRight className="ml-1 w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity" />
-                    </a>
-                  </li>
-                ))}
-              </ul>
+                <ul className="flex flex-col space-y-2">
+                  {[
+                    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/abhiraj-singh-chandrawat-74975a222/' },
+                    { name: 'GitHub', href: 'https://github.com/Abhirajsinghchandrawat' },
+                  ].map((item) => (
+                    <li key={item.name}>
+                      <a 
+                        href={item.href} 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex items-center text-white/80 hover:text-white transition-colors duration-300 text-sm md:text-base"
+                      >
+                        {item.name}
+                        <ArrowUpRight className="ml-1 w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
             </div>
           </div>
         </div>
