@@ -30,43 +30,49 @@ const ToolStack = () => {
       icon: 'https://www.svgrepo.com/show/354425/tableau-icon.svg',
       alt: 'Tableau Logo',
     },
-    {
-      id: 5,
-      name: 'Mixpanel',
-      icon: 'https://www.vectorlogo.zone/logos/mixpanel/mixpanel-icon.svg',
-      alt: 'Mixpanel Logo',
-    },
-    {
-      id: 6,
-      name: 'Apache Superset',
-      icon: 'https://logo.svgcdn.com/logos/apache-superset.svg',
-      alt: 'Apache Superset Logo',
-    },
-    {
-      id: 7,
-      name: 'Web Dev',
-      icon: 'https://www.svgrepo.com/show/349419/javascript.svg',
-      alt: 'Web Dev Logo',
-    },
       {
-        id: 8,
-        name: 'Excel',
-        icon: 'https://www.svgrepo.com/show/373589/excel.svg',
-        alt: 'Excel Logo',
+        id: 5,
+        name: 'Mixpanel',
+        icon: 'https://cdn.worldvectorlogo.com/logos/mixpanel.svg',
+        alt: 'Mixpanel Logo',
       },
       {
-        id: 9,
-        name: 'n8n',
-        icon: 'https://logo.svgcdn.com/simple-icons/n8n-dark.svg',
-        alt: 'n8n Logo',
+        id: 6,
+        name: 'Apache Superset',
+        icon: 'https://logo.svgcdn.com/logos/apache-superset.svg',
+        alt: 'Apache Superset Logo',
       },
       {
-        id: 10,
-        name: 'Zapier',
-        icon: 'https://www.svgrepo.com/show/354596/zapier-icon.svg',
-        alt: 'Zapier Logo',
+        id: 7,
+        name: 'Web Dev',
+        icon: 'https://www.svgrepo.com/show/349419/javascript.svg',
+        alt: 'Web Dev Logo',
       },
-    ];
+        {
+          id: 8,
+          name: 'Excel',
+          icon: 'https://www.svgrepo.com/show/373589/excel.svg',
+          alt: 'Excel Logo',
+        },
+        {
+          id: 9,
+          name: 'n8n',
+          icon: 'https://www.vectorlogo.zone/logos/n8n/n8n-icon.svg',
+          alt: 'n8n Logo',
+        },
+        {
+          id: 10,
+          name: 'Zapier',
+          icon: 'https://www.svgrepo.com/show/354596/zapier-icon.svg',
+          alt: 'Zapier Logo',
+        },
+        {
+          id: 11,
+          name: 'Make.com',
+          icon: 'https://www.vectorlogo.zone/logos/make/make-icon.svg',
+          alt: 'Make Logo',
+        },
+      ];
 
 
   const containerVariants = {
