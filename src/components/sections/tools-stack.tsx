@@ -4,7 +4,6 @@ import React from 'react';
 import Image from 'next/image';
 
 const ToolStack = () => {
-  // Assets map based on the provided list and their visual appearance in screenshots
   const tools = [
     {
       id: 1,
@@ -47,9 +46,7 @@ const ToolStack = () => {
   return (
     <section className="bg-secondary px-6 py-24 md:px-20 lg:py-40">
       <div className="container mx-auto max-w-[1440px]">
-        {/* Header Section */}
         <div className="relative flex flex-col md:flex-row items-baseline mb-20 md:mb-32">
-          {/* Label with Plus Icon */}
           <div className="flex items-center gap-2 mb-10 md:mb-0 md:w-1/4">
             <span className="text-accent text-lg font-bold">+</span>
             <span className="font-mono text-[12px] font-bold uppercase tracking-[0.2em] text-[#1a1a1a]">
@@ -57,7 +54,6 @@ const ToolStack = () => {
             </span>
           </div>
 
-          {/* Main Title */}
           <div className="flex-1">
             <h2 className="section-headline text-[#1a1a1a] mb-2 leading-[0.9]">
               Smart Tools.
@@ -67,7 +63,6 @@ const ToolStack = () => {
             </h2>
           </div>
 
-          {/* Badge Number */}
           <div className="hidden md:flex absolute right-0 top-0">
             <div className="orange-pill h-8 w-8 !p-0 flex items-center justify-center font-bold">
               6
@@ -75,7 +70,6 @@ const ToolStack = () => {
           </div>
         </div>
 
-        {/* Grid Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#333333]/10">
           {tools.map((tool) => (
             <div
@@ -93,28 +87,11 @@ const ToolStack = () => {
                 />
               </div>
               
-              {/* Subtle border effect on hover - optional but matches agency feel */}
               <div className="absolute inset-0 border border-transparent group-hover:border-[#1a1a1a]/5 pointer-events-none transition-colors" />
             </div>
           ))}
         </div>
       </div>
-
-      <style jsx global>{`
-        .section-headline {
-          font-family: inherit;
-          font-size: clamp(40px, 6vw, 84px);
-          font-weight: 500;
-          letter-spacing: -0.05em;
-        }
-        
-        .orange-pill {
-          background-color: #ff5c00;
-          color: white;
-          border-radius: 9999px;
-          font-size: 14px;
-        }
-      `}</style>
     </section>
   );
 };
