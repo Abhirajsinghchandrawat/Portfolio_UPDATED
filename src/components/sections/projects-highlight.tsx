@@ -78,9 +78,8 @@ export default function ProjectsHighlight() {
             </div>
 
             <div className="hidden md:flex items-center justify-center w-8 h-10 bg-[#FF5C00] rounded-full text-white font-bold text-[14px]">
-
-            6
-          </div>
+              4
+            </div>
         </motion.div>
 
         {/* Portfolio Grid */}
