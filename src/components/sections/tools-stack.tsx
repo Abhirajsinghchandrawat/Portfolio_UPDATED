@@ -66,13 +66,19 @@ const ToolStack = () => {
           icon: 'https://www.svgrepo.com/show/354596/zapier-icon.svg',
           alt: 'Zapier Logo',
         },
-        {
-          id: 11,
-          name: 'Make.com',
-          icon: 'https://www.vectorlogo.zone/logos/make/make-icon.svg',
-          alt: 'Make Logo',
-        },
-      ];
+          {
+            id: 11,
+            name: 'Make.com',
+            icon: 'https://www.vectorlogo.zone/logos/make/make-icon.svg',
+            alt: 'Make Logo',
+          },
+          {
+            id: 12,
+            name: 'Jira',
+            icon: 'https://www.svgrepo.com/show/353935/jira.svg',
+            alt: 'Jira Logo',
+          },
+        ];
 
 
   const containerVariants = {
