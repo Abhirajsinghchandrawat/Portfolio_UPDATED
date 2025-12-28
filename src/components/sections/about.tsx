@@ -1,74 +1,113 @@
-import React from 'react';
+"use client";
 
-const AboutUsSection = () => {
+import React, { useRef } from "react";
+import { useScroll, useTransform, motion } from "framer-motion";
+
+/**
+ * About Section for Arqos® Studio
+ * Features a sticky video on the left and scrolling narrative text on the right.
+ * Transitions between "Empowered by AI. Driven by Human Vision" and the mission statement.
+ */
+const AboutSection = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Scroll progress for the entire about section
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"],
+  });
+
+  // Opacity transitions for the two text blocks
+  // First block fades out as second block fades in
+  const firstTextBlockOpacity = useTransform(scrollYProgress, [0, 0.4, 0.5], [1, 1, 0]);
+  const secondTextBlockOpacity = useTransform(scrollYProgress, [0.5, 0.6, 1], [0, 1, 1]);
+
+  // Video container vertical movement / subtle scaling if needed (kept fixed per design)
+  const videoScale = useTransform(scrollYProgress, [0, 1], [1, 1.05]);
+
   return (
-    <section 
-      className="relative w-full bg-[#000000] overflow-hidden" 
+    <section
+      ref={containerRef}
       id="about-us"
-      style={{ minHeight: '160vh' }} // Increased height to allow for sticky scroll feel
+      className="relative bg-black w-full"
+      style={{ height: "300vh" }} // Sufficient height for the scroll experience
     >
-      <div className="container mx-auto px-8 md:px-16 flex flex-col pt-[120px] md:pt-[160px]">
-        {/* Sticky Scroll Container */}
-        <div className="relative w-full grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+      <div className="sticky top-0 h-screen w-full flex overflow-hidden">
+        {/* Left Side: Sticky Media Container */}
+        <div className="hidden lg:flex w-1/2 h-full items-center justify-center p-16">
+          <motion.div 
+            className="relative w-full aspect-[4/5] max-w-[600px] overflow-hidden rounded-[12px] bg-[#141414]"
+            style={{ scale: videoScale }}
+          >
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover grayscale opacity-80"
+              src="https://framerusercontent.com/assets/FAqis5wUIipMQJc704i6yp6AbAE.mp4"
+            />
+          </motion.div>
+        </div>
+
+        {/* Right Side: Narrative Content */}
+        <div className="w-full lg:w-1/2 h-full relative flex flex-col justify-center px-10 md:px-20 lg:pr-32 lg:pl-0">
           
-          {/* Left Column: Media & Sticky Content */}
-          <div className="md:col-span-6 sticky top-[160px] h-[300px] md:h-[500px] w-full z-10">
-            <div className="relative w-full h-full rounded-[24px] overflow-hidden bg-[#0e0e0e]">
-              <video 
-                src="https://framerusercontent.com/assets/FAqis5wUIipMQJc704i6yp6AbAE.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover grayscale opacity-80"
-              />
-              {/* Grainy Overlay */}
-              <div className="absolute inset-0 pointer-events-none opacity-10 mix-blend-soft-light bg-[url('data:image/svg+xml,%3Csvg viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cfilter id=\"noiseFilter\"%3E%3CfeTurbulence type=\"fractalNoise\" baseFrequency=\"0.65\" numOctaves=\"3\" stitchTiles=\"stitch\"/%3E%3C/filter%3E%3Crect width=\"100%25\" height=\"100%25\" filter=\"url(%23noiseFilter)\"/%3E%3C/svg%3E')]" />
-            </div>
-          </div>
+          {/* First Phase: Tagline */}
+          <motion.div 
+            style={{ opacity: firstTextBlockOpacity }}
+            className="absolute inset-0 flex flex-col justify-center px-10 md:px-20 lg:pr-32 lg:pl-0 pointer-events-none"
+          >
+             <div className="flex items-center gap-12 mb-8">
+                <span className="font-display text-[16px] text-white font-medium tracking-tight">Arqos®</span>
+                <span className="font-display text-[16px] text-white font-medium tracking-tight">©2025</span>
+             </div>
+             
+             <div className="w-[60px] h-[1px] bg-[#333333] mb-12" />
 
-          {/* Right Column: Flowing Text content */}
-          <div className="md:col-span-6 flex flex-col space-y-[100px] md:space-y-[160px] pb-[160px]">
-            
-            {/* First Text Block: Tagline */}
-            <div className="flex flex-col space-y-12">
-              <div className="flex items-center space-x-12">
-                <span className="text-white font-medium text-[20px] tracking-tight">Arqos®</span>
-                <span className="text-[#8a8a8a] font-medium text-[20px] tracking-tight">©2025</span>
-              </div>
-              
-              <div className="w-[80px] h-[1px] bg-[#1f1f1f]" />
-              
-              <h2 className="text-white text-[48px] md:text-[64px] font-medium leading-[1.1] tracking-[-0.03em]">
-                <span className="text-[#8a8a8a] block mb-2">// Empowered by AI.</span>
-                Driven by Human Vision.
-              </h2>
-            </div>
+             <h2 className="section-headline text-white leading-[1.05]">
+                <span className="text-[#999999] opacity-50 block mb-2">//</span>
+                <span className="block italic">Empowered</span> 
+                <span className="block">by AI.</span>
+                <span className="block italic mt-4">Driven</span> 
+                <span className="block">by Human</span>
+                <span className="block">Vision.</span>
+             </h2>
+          </motion.div>
 
-            {/* Second Text Block: Intro */}
-            <div className="flex flex-col space-y-12">
-              <div className="flex items-center space-x-4">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7 0V14M0 7H14" stroke="#FF5C00" strokeWidth="2"/>
+          {/* Second Phase: Mission Statement */}
+          <motion.div 
+            style={{ opacity: secondTextBlockOpacity }}
+            className="absolute inset-0 flex flex-col justify-center px-10 md:px-20 lg:pr-32 lg:pl-0 pointer-events-none"
+          >
+            <div className="flex items-center gap-3 mb-8">
+              <span className="text-accent text-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 4V20M4 12H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
                 </svg>
-                <span className="text-[#8a8a8a] text-[12px] font-semibold tracking-[0.15em]">ABOUT US</span>
-              </div>
-              
-              <h2 className="text-white text-[48px] md:text-[64px] font-medium leading-[1.1] tracking-[-0.03em]">
-                We specialize in delivering digital products — 
-                <span className="text-[#8a8a8a]"> intelligently optimized through AI.</span>
-              </h2>
+              </span>
+              <span className="small-caps text-white">About Us</span>
             </div>
-            
-          </div>
+
+            <h2 className="section-headline text-white leading-[1.1] max-w-[600px]">
+              We specialize in delivering digital products — <span className="text-[#999999]">intelligently optimized through AI.</span>
+            </h2>
+          </motion.div>
+
         </div>
       </div>
 
-      {/* Background Subtle Gradient Mask */}
-      <div className="absolute top-0 left-0 w-full h-[300px] bg-gradient-to-b from-black to-transparent pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-full h-[300px] bg-gradient-to-t from-black to-transparent pointer-events-none" />
+      {/* Mobile-only view fallback (non-sticky/simpler stack if responsive needs differ) */}
+      {/* Note: The design instructions specify cloning the sticky effect perfectly */}
+      
+      {/* Progress Indicator Dots (Optional decorative elements from screenshots) */}
+      <div className="fixed right-12 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-4 pointer-events-none">
+         <div className="w-1.5 h-1.5 rounded-full bg-white opacity-20"></div>
+         <div className="orange-pill !w-8 !h-8 !p-0 font-mono">4</div>
+         <div className="w-1.5 h-1.5 rounded-full bg-white opacity-20"></div>
+      </div>
     </section>
   );
 };
 
-export default AboutUsSection;
+export default AboutSection;
