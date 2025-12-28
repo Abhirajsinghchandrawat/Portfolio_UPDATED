@@ -187,31 +187,6 @@ export default function ServiceCards() {
         <FAQAccordion />
       </ServiceCard>
 
-      {/* Numerical marker "5" left side */}
-      <div className="relative h-0">
-         <div className="absolute left-16 top-0 z-10 hidden lg:flex items-center justify-center bg-[#ff5c00] text-white text-[11px] font-bold rounded-full w-[26px] h-[34px]">
-          5
-        </div>
-      </div>
-
-      {/* Brand Identity */}
-      <ServiceCard
-        number="1"
-        title="Brand Identity"
-        description="AI-powered iterations + Human-led intuition = Impactful brand DNA."
-        tags={["LOGO", "VISUAL", "STRATEGY", "TYPOGRAPHY", "BRAND GUIDELINES"]}
-        plusCount={4}
-        videoSrc="https://framerusercontent.com/assets/0CBJSOpWddSTBZFdv4bYgmyVAog.mp4"
-        markerPos={{ top: "100px", left: "64px" }}
-      />
-
-      {/* Numerical marker "3" right side floating at bottom of stack */}
-      <div className="relative h-0">
-         <div className="absolute right-16 bottom-[100px] z-10 hidden lg:flex items-center justify-center bg-[#ff5c00] text-white text-[11px] font-bold rounded-full w-[26px] h-[34px]">
-          3
-        </div>
-      </div>
-
     </section>
   );
 }
