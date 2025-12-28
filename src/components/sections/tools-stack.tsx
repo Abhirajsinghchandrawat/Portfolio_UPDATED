@@ -81,7 +81,7 @@ const ToolStack = () => {
   };
 
   return (
-    <section className="bg-secondary px-6 py-24 md:px-20 lg:py-40">
+    <section id="tools" className="bg-secondary px-6 py-24 md:px-20 lg:py-40">
       <div className="container mx-auto max-w-[1440px]">
         <div className="relative flex flex-col md:flex-row items-baseline mb-20 md:mb-32">
           <motion.div 
