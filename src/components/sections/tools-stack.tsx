@@ -51,7 +51,7 @@ const ToolStack = () => {
     {
       id: 8,
       name: 'ChatGPT',
-      icon: 'https://www.vectorlogo.zone/logos/openai/openai-icon.svg',
+      icon: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/chatgpt-1767010456485.webp?width=8000&height=8000&resize=contain',
       alt: 'ChatGPT Logo',
     },
     {
@@ -75,7 +75,7 @@ const ToolStack = () => {
     {
       id: 12,
       name: 'Mixpanel',
-      icon: 'https://www.vectorlogo.zone/logos/mixpanel/mixpanel-icon.svg',
+      icon: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/mixpanel-logo-1767010456480.webp?width=8000&height=8000&resize=contain',
       alt: 'Mixpanel Logo',
     },
     {
@@ -111,8 +111,26 @@ const ToolStack = () => {
     {
       id: 18,
       name: 'R',
-      icon: 'https://www.svgrepo.com/show/374056/r.svg',
+      icon: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/R_-programming_language-Logo.wine-1767010456487.webp?width=8000&height=8000&resize=contain',
       alt: 'R Logo',
+    },
+    {
+      id: 19,
+      name: 'Oracle',
+      icon: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/oracle-1767010456485.webp?width=8000&height=8000&resize=contain',
+      alt: 'Oracle Logo',
+    },
+    {
+      id: 20,
+      name: 'AWS',
+      icon: 'https://www.svgrepo.com/show/376356/aws.svg',
+      alt: 'AWS Logo',
+    },
+    {
+      id: 21,
+      name: 'Google Cloud',
+      icon: 'https://www.svgrepo.com/show/353805/google-cloud.svg',
+      alt: 'Google Cloud Logo',
     },
   ];
 
@@ -180,7 +198,7 @@ const ToolStack = () => {
 
           <div className="hidden md:flex absolute right-0 top-0">
             <div className="orange-pill h-8 w-8 !p-0 flex items-center justify-center font-bold">
-              18
+              21
             </div>
           </div>
 
