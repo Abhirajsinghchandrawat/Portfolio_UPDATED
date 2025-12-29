@@ -108,31 +108,13 @@ const ToolStack = () => {
       icon: 'https://www.svgrepo.com/show/354683/alteryx.svg',
       alt: 'Alteryx Logo',
     },
-      {
-        id: 18,
-        name: 'R',
-        icon: 'https://www.svgrepo.com/show/374056/r.svg',
-        alt: 'R Logo',
-      },
-      {
-        id: 19,
-        name: 'Oracle',
-        icon: 'https://www.vectorlogo.zone/logos/oracle/oracle-icon.svg',
-        alt: 'Oracle Logo',
-      },
-      {
-        id: 20,
-        name: 'AWS',
-        icon: 'https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg',
-        alt: 'AWS Logo',
-      },
-      {
-        id: 21,
-        name: 'Google Cloud',
-        icon: 'https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg',
-        alt: 'Google Cloud Logo',
-      },
-    ];
+    {
+      id: 18,
+      name: 'R',
+      icon: 'https://www.svgrepo.com/show/374056/r.svg',
+      alt: 'R Logo',
+    },
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -196,11 +178,11 @@ const ToolStack = () => {
             </motion.h2>
           </div>
 
-            <div className="hidden md:flex absolute right-0 top-0">
-              <div className="orange-pill h-8 w-8 !p-0 flex items-center justify-center font-bold">
-                21
-              </div>
+          <div className="hidden md:flex absolute right-0 top-0">
+            <div className="orange-pill h-8 w-8 !p-0 flex items-center justify-center font-bold">
+              18
             </div>
+          </div>
 
         </div>
 
